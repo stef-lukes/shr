@@ -1,0 +1,582 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+/* Global   Global    Global    Global
+--------------------------------------------- */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  word-wrap: break-word !important;
+  font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
+}
+h1 {
+  font-size: 5vw;
+  font-weight: 900;
+}
+h2 {
+  font-size: 2.8vw;
+  font-weight: 900;
+  margin-bottom: 1vw;
+}
+h3 {
+  font-size: 2vw;
+  font-weight: 900;
+}
+
+h4 {
+  font-size: 2.5vw;
+  font-weight: 900;
+}
+h5 {
+  font-size: 1.75vw;
+  font-weight: 900;
+}
+h6 {
+  font-size: 1.3vw;
+  font-weight: 900;
+}
+
+a,
+a:link,
+a:active,
+a:visited {
+  text-decoration: none;
+}
+.red {
+  color: red;
+}
+
+/* Supra-Nav    Supra-Nav   Supra-Nav
+--------------------------------------------- */
+
+.supra-nav {
+  display: flex;
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(153,153,153,1) 100%);
+  text-transform: uppercase;
+  color: white;
+  line-height: 1.2;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 5px solid white;
+ }
+ .logo {
+  width: 20%;
+  background: white;
+ }
+ .logo img {
+  width: 60%;
+  padding: 14%;
+ }
+.supra-box {
+  text-align: center;
+}
+.email-box {
+  width: 40%;
+}
+.supra-number-box {
+  width: 30%;
+  margin-right: 3%;
+}
+.email-box a {
+  color: white;
+  font-weight: 900;
+  text-transform: lowercase;
+  font-size: 1.225vw;
+}
+.supra-number-box a {
+  color: white;
+  font-weight: 900;
+  font-size: 3.5vw;
+}
+.supra-number-box .d-line {
+  font-size: 1.675vw;
+}
+.supra-number-box .free-call {
+  font-size: 1.45vw;
+}
+.supra-number-box .anytime {
+  font-size: 1.125vw;
+}
+
+
+/* Navigation    Navigation    Navigation
+--------------------------------------------- */
+
+#nav-number-box, #menu-btn, .menu-icon {
+  display: none;
+}
+.navbar {
+  background-color: black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-bottom: 10px solid #6d6d6d;
+}
+.navbar .menu {
+  width: 100%;
+  list-style: none;
+}
+.navbar .menu li {
+  width: 14.275%;
+  float: left;
+  text-align: center;
+  text-transform: uppercase;
+  border-right: 5px solid white;
+  box-sizing: border-box;
+}
+.navbar .menu li a {
+  color: white;
+  padding: 13px 0 20px 0;
+  font-weight: 900;
+  display: block;
+  font-size: 1vw;
+}
+#last-item {
+  border-right: none !important;
+}
+#last-item a {
+  padding-top: 26px !important;
+  padding-bottom: 0.4vw;
+}
+
+/* Header   Header    Header    Header
+--------------------------------------------- */
+
+.header {
+  clear: both;
+  width: 100%;
+  background-image: url(assets/red-overlay.png), url(assets/judge-banner.jpg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top;
+  background-size: 100% 101%, 101% auto;
+  height: 49vw;
+  border-top: 5px solid white;
+  box-sizing: border-box;
+ }
+.header .enquire-box {
+  position: relative;
+  float: right;
+  margin-right: 10vw;
+  top: 10vw;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 900;
+ }
+.header .enquire-box a { 
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(153,153,153,1) 100%);
+  padding: 1vw 2vw;
+  color: white;
+  font-size: 1.6vw;
+}
+.header .enquire-box p {
+  margin-top: 30px;
+}
+.header .header-text {
+  position: relative;
+  top: 31vw;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  clear: both;
+  line-height: 1;
+}
+.header .header-text h3 {
+  font-weight: 400;
+}
+
+
+/* Sub-Header   Sub-Header    Sub-Header
+--------------------------------------------- */
+
+.sub-header {
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 2vw 0;
+  text-align: center;
+}
+.sub-header h1, .sub-header h5 {
+  text-transform: uppercase;
+}
+.sub-header p {
+  width: 85%;
+  margin: 25px auto;
+  font-size: 1.3vw;
+  font-weight: 600;
+}
+
+
+/* 2 Column Section   2 Column Section    2 Column Section
+--------------------------------------------- */
+
+.two-col-flex {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 3vw 0;
+}
+.two-col-flex .will-help {
+  width: 60%;
+}
+.two-col-flex .submit-enquiry {
+  width: 25%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* -------------------------------------------------- */
+
+.two-col-flex .will-help .top-text p,
+.two-col-flex .will-help .bottom-text p { 
+  font-size: 1vw;
+  font-weight: 600;
+  margin-bottom: 1vw;
+}
+.two-col-flex .will-help .top-text h5 {
+  line-height: 1.2;
+  margin-bottom: 1vw;
+}
+.two-col-flex .will-help .free-no-charge {
+  margin: 2vw 0;
+}
+.two-col-flex .will-help .free-no-charge .flex {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  background: black;
+  text-align: center;
+  align-items: center;
+  margin: 0.5vw 0;
+}
+.two-col-flex .will-help .free-no-charge .flex .free {
+  background: red;
+  width: 10%;
+  padding: 1vw 0;
+}
+.two-col-flex .will-help .free-no-charge .flex .arrow {
+  background-image: url(assets/arrow.svg);
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: top left;
+  width: 5%;
+  height: 3.75vw;
+}
+.two-col-flex .will-help .free-no-charge .flex .blurb {
+  width: 70%;
+}
+.two-col-flex .will-help .free-no-charge .flex .blurb h6 {
+  font-weight: 700 !important;
+}
+.two-col-flex .will-help .free-no-charge .flex .no-charge {
+  background: red;
+  padding: 1vw 2vw;
+  width: 15%;
+}
+
+/* -------------------------------------------------- */
+
+.two-col-flex .will-help .we-can-container .simply-call {
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  top: 3.5vw;
+}
+.two-col-flex .will-help .we-can-container .simply-call .simply-number a {
+  color: black;
+}
+.two-col-flex .will-help .we-can-container .simply-call .simply-number h1 {
+  line-height: 1;
+}
+.two-col-flex .will-help .we-can-container .simply-call .simply-number h5 {
+  background-color: red;
+  color: white;
+  width: 50%;
+  margin: 10px auto;
+}
+.two-col-flex .will-help .we-can-container .simply-call .simply-box {
+  background-color: white;
+  border: 5px solid black;
+  width: 75%;
+  margin: auto;
+  border-radius: 100px;
+  line-height: 1.1;
+  padding: 0.5vw 0;
+  margin-top: 2vw;
+}
+.two-col-flex .will-help .we-can-container .we-can-box {
+  background: black;
+  padding: 5vw 3vw 3vw 3vw;
+ }
+.two-col-flex .will-help .we-can-container .we-can-box p {
+  color: white;
+  margin-bottom: 2vw;
+  font-size: 1.3vw;
+  font-weight: 600;
+ }
+.two-col-flex .will-help .we-can-container .we-can-box .we-can-flex {
+  display: flex;
+  justify-content: flex-start;
+  color: white;
+  align-items: baseline;
+  text-transform: uppercase;
+  margin-bottom: 0.5vw;
+ }
+.two-col-flex .will-help .we-can-container .we-can-box .we-can-flex img {
+  width: 35px;
+}
+.two-col-flex .will-help .we-can-container .we-can-box .we-can-flex h6 span {
+  background-color: red;
+  padding: 0 5px;
+}
+.two-col-flex .will-help .we-can-container .we-can-box .better-options {
+  background-color: white;
+  text-align: center;
+  margin-top: 3vw;
+  padding: 2vw 1vw 1vw 1vw;
+}
+.two-col-flex .will-help .we-can-container .we-can-box .better-options h2 {
+  font-size: 2.7vw;
+  border-bottom: 7px solid red;
+}
+.two-col-flex .will-help .we-can-container .we-can-box .better-options p {
+  color: black;
+  font-size: 1.2vw !important;
+}
+.two-col-flex .will-help .we-can-container .we-can-box .better-options p span {
+  text-transform: uppercase;
+}
+
+/* -------------------------------------------------- */
+
+.two-col-flex .submit-enquiry .submit-title {
+  background: #6d6d6d;
+  color: white;
+  padding: 0.5vw;
+  width: 70%;
+  margin: auto;
+  border-radius: 20px;
+  border: 8px solid white;
+}
+.two-col-flex .submit-enquiry .submit-box {
+  border: 10px solid black;
+  position: relative;
+  top: -2vw;
+  z-index: -1;
+}
+.two-col-flex .submit-enquiry .submit-box .free-rep {
+  color: white;
+  background-color: black;
+  padding-top: 3vw;
+  padding-bottom: 2vw;  
+}
+.two-col-flex .submit-enquiry .submit-box .free-rep h2 {
+  margin: 0 !important;
+  line-height: 1;
+}
+.two-col-flex .submit-enquiry .submit-box .free-rep h4 {
+  background-color: red;
+  width: 30%;
+  margin: 0.5vw auto;
+}
+.two-col-flex .submit-enquiry .submit-box .free-rep h5 span {
+  border-bottom: 5px solid red;
+}
+.two-col-flex .submit-enquiry .submit-box .fast-track {
+  background-color: red;
+  width: 95%;
+  margin: 0.75vw auto;
+  border-radius: 10px;
+  color: white;
+  line-height: 1;
+  padding: 1vw 0;
+}
+.two-col-flex .submit-enquiry .submit-box .fast-track h2 {
+  margin: 1vw auto !important;
+  background-color: black;
+  width: 85%;
+  border-radius: 10px;
+}
+.two-col-flex .submit-enquiry .submit-box .fast-track .fast-flex {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.two-col-flex .submit-enquiry .submit-box .fast-track .fast-flex .box {
+  background-color: black;
+  width: 25%;
+  padding: 0.25vw;
+  border-radius: 10px;
+}
+.two-col-flex .submit-enquiry .submit-box .fast-track .fast-flex .box h2 {
+  margin: 0 !important;
+}
+.two-col-flex .submit-enquiry .submit-box .fast-track .fast-flex .box h6 {
+  font-size: 1.2vw;
+}
+.two-col-flex .submit-enquiry .submit-box .fast-track .fast-flex .box h6 span {
+  font-size: 0.9vw;
+}
+.two-col-flex .submit-enquiry .submit-box .fast-track .fast-flex .response {
+  width: 40%;
+}
+.two-col-flex .submit-enquiry .submit-box .fast-track .fast-flex .response h5 {
+  font-size: 1.5vw;
+}
+.two-col-flex .submit-enquiry .submit-box .fast-track .fast-flex .response .two {
+  font-size: 2vw;
+}
+.two-col-flex .submit-enquiry .submit-box .form {
+  text-align: left !important;
+}
+.two-col-flex .submit-enquiry .submit-box .form form {
+  width: 92%;
+  margin: auto;
+}
+.two-col-flex .submit-enquiry .submit-box .form form label {
+  font-size: 0.9vw;
+  font-weight: 600;
+}
+.two-col-flex .submit-enquiry .submit-box .form form input,
+.two-col-flex .submit-enquiry .submit-box .form form textarea {
+  width: 100%;
+  height: 1.7vw;
+  border: 2px solid black;
+  margin-bottom: 0.5vw;
+}
+.two-col-flex .submit-enquiry .submit-box .form form button {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center !important;
+  width: 50%;
+  padding: 0.5vw 0.75vw;
+  background: black;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 1.5vw;
+  border-radius: 20px;
+  margin-bottom: 1vw;
+  margin-top: 0.5vw;
+  position: relative;
+  left: 5.5vw;
+  border: none;
+}
+
+/* -------------------------------------------------- */
+
+.two-col-flex .submit-enquiry .stop-action {
+  background-color: red;
+  color: white;
+  line-height: 1.2;
+  padding: 1.5vw 0 3.5vw 0; 
+}
+.two-col-flex .submit-enquiry .stop-action h3 {
+  border-bottom: 5px solid black;
+  width: 80%;
+  margin: auto;
+  font-size: 2.2vw !important;
+}
+.two-col-flex .submit-enquiry .stop-action h4 {
+  font-size: 1.64vw !important;
+}
+.two-col-flex .submit-enquiry .today {
+  background-color: black;
+  color: white;
+  letter-spacing: -5px;
+  line-height: 1.2;
+  width: 80%;
+  border-radius: 50px;
+  margin: auto;
+  position: relative;
+  top: -3vw;
+ }
+.two-col-flex .submit-enquiry .call-direct {
+  background-color: black;
+  color: white;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+}
+.two-col-flex .submit-enquiry .call-direct h5 {
+  font-size: 2.4vw;
+}
+.two-col-flex .submit-enquiry .call-direct h5 span {
+  border-bottom: 7px solid red;
+}
+.two-col-flex .submit-enquiry .call-direct h6 {
+  margin-top: 0.75vw;
+  font-size: 1.8vw;
+}
+.two-col-flex .submit-enquiry .call-direct .team {
+  background-color: red;
+  font-size: 3vw;
+  width: 40%;
+  margin: 0.5vw auto;
+  line-height: 1.2;
+}
+.two-col-flex .submit-enquiry .call-direct a {
+  color: white;
+}
+.two-col-flex .submit-enquiry .call-direct a h1 {
+  font-size: 3.5vw;
+}
+.two-col-flex .submit-enquiry .call-direct .freecall {
+  background-color: red;
+  width: 95%;
+  margin: auto;
+  font-size: 1.3vw;
+}
+.two-col-flex .submit-enquiry .ovals p {
+  margin: 2vw 0;
+  text-transform: initial;
+  font-size: 1.4vw;
+}
+.two-col-flex .submit-enquiry .ovals .oval-one {
+  color: white;
+  background-color: black;
+  border-radius: 100%;
+  padding: 1.5vw 0 1vw 0;
+}
+.two-col-flex .submit-enquiry .ovals .oval-one h6 {
+  font-size: 1.8vw;
+  line-height: 1.1;
+}
+.two-col-flex .submit-enquiry .ovals .oval-one h2 {
+  margin-bottom: 0;
+  color: red;
+  -webkit-text-stroke: 2px white;
+}
+.two-col-flex .submit-enquiry .ovals .oval-two {
+  background-color: black;
+  color: white;
+  padding: 1.5vw 0 2.5vw 0;
+  border-radius: 100%;
+  margin: 2vw 0;
+}
+.two-col-flex .submit-enquiry .ovals .oval-two h5 {
+  line-height: 1.2;
+  font-size: 2vw;
+}
+
+
+/* Houses Banner   Houses Banner    Houses Banner
+--------------------------------------------- */
+.houses-banner {
+  color: white;
+  text-align: center;
+  background-image: url(assets/red-houses.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: top center;
+  height: 28vw;
+  margin: 3vw 0;
+}
+.houses-banner p {
+  padding: 10vw;
+  font-size: 2vw;
+  width: 70%;
+  margin: auto;
+  font-weight: 600;
+}
