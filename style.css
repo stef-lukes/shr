@@ -687,7 +687,9 @@ a:visited {
   margin-bottom: 2vw;
   border-radius: 20px;
 }
-
+#n54 {
+  width: 100%;
+}
 .accordion-wrapper .accordion-item .panel .panel-content h5 {
   font-weight: 800;
   text-decoration: underline;
