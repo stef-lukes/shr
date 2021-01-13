@@ -8,6 +8,96 @@
 
     <title>Stop House Repossessions</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Add smooth scrolling to all links
+            $("a").on('click', function (event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
+    <script>
+        $(document).on('click', 'input[type="checkbox"][data-group]', function (event) {
+            // The checkbox that was clicked
+            var actor = $(this);
+            // The status of that checkbox
+            var checked = actor.prop('checked');
+            // The group that checkbox is in
+            var group = actor.data('group');
+            // All checkboxes of that group
+            var checkboxes = $('input[type="checkbox"][data-group="' + group + '"]');
+            // All checkboxes excluding the one that was clicked
+            var otherCheckboxes = checkboxes.not(actor);
+            // Check those checkboxes
+            otherCheckboxes.prop('checked', checked);
+        });
+    </script>
+    
+    <script>
+        function rotateImage() {
+            var element = document.getElementById("caret1");
+            element.classList.toggle("rotate");
+        }
+        function rotateImage2() {
+            var element = document.getElementById("caret2");
+            element.classList.toggle("rotate");
+        }
+        function rotateImage3() {
+            var element = document.getElementById("caret3");
+            element.classList.toggle("rotate");
+        }
+        function rotateImage4() {
+            var element = document.getElementById("caret4");
+            element.classList.toggle("rotate");
+        }
+        function rotateImage5() {
+            var element = document.getElementById("caret5");
+            element.classList.toggle("rotate");
+        }
+        function rotateImage6() {
+            var element = document.getElementById("caret6");
+            element.classList.toggle("rotate");
+        }
+        function rotateImage7() {
+            var element = document.getElementById("caret7");
+            element.classList.toggle("rotate");
+        }
+        function rotateImage8() {
+            var element = document.getElementById("caret8");
+            element.classList.toggle("rotate");
+        }
+        function rotateImage9() {
+            var element = document.getElementById("caret9");
+            element.classList.toggle("rotate");
+        }
+        function rotateImage10() {
+            var element = document.getElementById("caret10");
+            element.classList.toggle("rotate");
+        }
+        function rotateImage11() {
+            var element = document.getElementById("caret11");
+            element.classList.toggle("rotate");
+        }
+    </script>
     <script>
         window.onscroll = function () {
             scrollFunction();
@@ -65,15 +155,50 @@
     <div class="navbar" id="navbar">
         <input class="menu-btn" type="checkbox" id="menu-btn" />
         <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
-        <ul class="menu" id="menu">
-            <li><a href="#">Why<br>Choose Us?</a></li>
-            <li><a href="#">Repossessions<br>Evictions</a></li>
-            <li><a href="#">N244 Court<br>Applications</a></li>
-            <li><a href="#">Free Legal<br>Representation</a></li>
-            <li><a href="#">High Court<br>County Court</a></li>
-            <li><a href="#">Trustees,<br>Bankruptcy, Receivers</a></li>
-            <li id="last-item"><a href="#">Contact Us</a></li>
-        </ul>
+        <div class="menu" id="menu">
+            <div class="menu-item">
+                <label for="menuOne">
+                    <input class="checkbox" type="checkbox" name="menuOne" id="menuOne" data-group="group1" />
+                    <a href="#whychoose" onclick="menuOne.click();rotateImage7();">Why<br>Choose Us?</a>
+                </label>
+            </div>
+            <div class="menu-item">
+                <label for="menuTwo">
+                    <input class="checkbox" type="checkbox" name="menuTwo" id="menuTwo" data-group="group2" />
+                    <a href="#evictions" onclick="menuTwo.click();rotateImage();">Repossessions<br>Evictions</a>
+                </label>
+            </div>
+            <div class="menu-item">
+                <label for="menuThree">
+                    <input class="checkbox" type="checkbox" name="menuThree" id="menuThree" data-group="group3" />
+                    <a href="#n244" onclick="menuThree.click();rotateImage3();">N244 Court<br>Applications</a>
+                </label>
+            </div>
+            <div class="menu-item">
+                <label for="menuFour">
+                    <input class="checkbox" type="checkbox" name="menuFour" id="menuFour" data-group="group4" />
+                    <a href="#free" onclick="menuFour.click();rotateImage2();">Free Legal<br>Representation</a>
+                </label>
+            </div>
+            <div class="menu-item">
+                <label for="menuFive">
+                    <input class="checkbox" type="checkbox" name="menuFive" id="menuFive" data-group="group5" />
+                    <a href="#highcounty" onclick="menuFive.click();rotateImage4();">High Court<br>County Court</a>
+                </label>
+            </div>
+            <div class="menu-item">
+                <label for="menuSix">
+                    <input class="checkbox" type="checkbox" name="menuSix" id="menuSix" data-group="group6" />
+                    <a href="#tbr" onclick="menuSix.click();rotateImage5();">Trustees,<br>Bankruptcy, Receivers</a>
+                </label>
+            </div>
+            <div class="menu-item" id="last-item">
+                <label for="menuSeven">
+                    <input class="checkbox" type="checkbox" name="menuSeven" id="menuSeven" />
+                    <a href="#">Contact Us</a>
+                </label>
+            </div>
+        </div>
         <div id="nav-number-box">
             <h6>Direct Line - Defence Team</h6>
             <a href="">0800 0286 055</a>
@@ -182,8 +307,8 @@
                     </div>
                     <div class="arrow"></div>
                     <div class="blurb">
-                        <h6>Help and Advice</h6>
-                        <h6>Professional expert guidance.</h6>
+                        <h6>Legal Representation</h6>
+                        <h6>Experienced specialist solicitors.</h6>
                     </div>
                     <div class="no-charge">
                         <h6>NO CHARGE</h6>
@@ -195,8 +320,8 @@
                     </div>
                     <div class="arrow"></div>
                     <div class="blurb">
-                        <h6>Help and Advice</h6>
-                        <h6>Professional expert guidance.</h6>
+                        <h6>N244 Applications</h6>
+                        <h6>Fully submitted and court approved.</h6>
                     </div>
                     <div class="no-charge">
                         <h6>NO CHARGE</h6>
@@ -208,8 +333,8 @@
                     </div>
                     <div class="arrow"></div>
                     <div class="blurb">
-                        <h6>Help and Advice</h6>
-                        <h6>Professional expert guidance.</h6>
+                        <h6>Legal Court Attendance</h6>
+                        <h6>Expert Lawyer representation. </h6>
                     </div>
                     <div class="no-charge">
                         <h6>NO CHARGE</h6>
@@ -221,8 +346,8 @@
                     </div>
                     <div class="arrow"></div>
                     <div class="blurb">
-                        <h6>Help and Advice</h6>
-                        <h6>Professional expert guidance.</h6>
+                        <h6>Barrister Representation</h6>
+                        <h6>If required for High court.</h6>
                     </div>
                     <div class="no-charge">
                         <h6>NO CHARGE</h6>
@@ -234,8 +359,8 @@
                     </div>
                     <div class="arrow"></div>
                     <div class="blurb">
-                        <h6>Help and Advice</h6>
-                        <h6>Professional expert guidance.</h6>
+                        <h6>Form Processing</h6>
+                        <h6>We handle and complete documentation.</h6>
                     </div>
                     <div class="no-charge">
                         <h6>NO CHARGE</h6>
@@ -247,8 +372,8 @@
                     </div>
                     <div class="arrow"></div>
                     <div class="blurb">
-                        <h6>Help and Advice</h6>
-                        <h6>Professional expert guidance.</h6>
+                        <h6>Free Mortgage Period</h6>
+                        <h6>Mortgage free period arranged.</h6>
                     </div>
                     <div class="no-charge">
                         <h6>NO CHARGE</h6>
@@ -260,8 +385,8 @@
                     </div>
                     <div class="arrow"></div>
                     <div class="blurb">
-                        <h6>Help and Advice</h6>
-                        <h6>Professional expert guidance.</h6>
+                        <h6>Communication With Your Bank</h6>
+                        <h6>We will liaise with your bank and mortgage provider.</h6>
                     </div>
                     <div class="no-charge">
                         <h6>NO CHARGE</h6>
@@ -466,6 +591,889 @@
             needs and wishes and working to achieve the very best possible resolution.</p>
     </div>
 
+    <!-- ------------------- Accordion ------------------------- -->
+    <!-- ------------------- Accordion ------------------------- -->
+    <!-- ------------------- Accordion ------------------------- -->
+
+    <ul class="accordion-wrapper">
+        <li class="accordion-item" id="evictions">
+            <input type="checkbox" class="checkbox" name="checkbox" id="tab-one" data-group="group2" />
+            <label for="tab-one" onclick="rotateImage();">
+                <div class="label-icon">
+                    <div class="dot"></div>
+                </div>
+                <h6>Repossessions & Evictions</h6>
+                <img class="caret" id="caret1" src="assets/caret.svg" alt="">
+            </label>
+
+            <div class="panel">
+                <div class="panel-content">
+                    <section>
+                        <h5 class="toph5">How to Stop A House Repossession Order </h5>
+                        <h6>How Can I Stop a Repossession Order?</h6>
+                        <p>
+                            Despite what you may have heard or read a repossession order can be stopped at any time
+                            before
+                            the
+                            eviction date.
+                        </p>
+                        <h6>The options to avoid repossession of your house:</h6>
+                        <ol>
+                            <li>Create a plan to settle your outstanding mortgage debt.</li>
+                            <li>Write to your lender to re-negotiate your mortgage.</li>
+                            <li>Apprise yourself of the free mortgage-rescue services you might qualify for.</li>
+                            <li>If a claim has already been filed a claim against you, then:
+                                <ul class="no-border">
+                                    <li>Prepare your evidence</li>
+                                    <li>Get legal representation for your repossession hearing.</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </section>
+                    <section>
+                        <h5>Is a cheaper mortgage available to you?</h5>
+                        <p>You may need to re-finance to settle what’s owed to your current lender, but by transferring
+                            your
+                            mortgage elsewhere you may have lower monthly payments.</p>
+                    </section>
+                    <section>
+                        <h5>If your lender gave you a temporary break, could you keep your repayment schedule and catch
+                            up?
+                        </h5>
+                        <p>Then ask them to reduce or temporarily stop your re-payments for a short time. Alternatively
+                            it
+                            may
+                            be worth asking them to extend the term of your mortgage to reduce you payments ( though
+                            this
+                            will
+                            result in more interest being paid overall).</p>
+                    </section>
+                    <section>
+                        <h5>Are you in a shared-ownership scheme?</h5>
+                        <p>Look at selling back a portion of your ownership to the landlord to vary the terms of your
+                            flexible
+                            tenure.</p>
+                    </section>
+                    <section>
+                        <h5>Are you at your wit’s end because none of these options seem practical?</h5>
+                        <p>Then your nearest Citizens Advice Bureau can offer free help from a professional debt
+                            adviser.
+                            They
+                            could suggest your best course of action is to contact someone like us to arange financing
+                            to
+                            stop
+                            the repossession of your house.</p>
+                    </section>
+                    <section>
+                        <h5>Attempt to renegotiate your mortgage—write to your lender</h5>
+                        <ul>
+                            <li>Get the address and a name of the person or department handling your loan.</li>
+                            <li>Avoid using emotional language, be polite and formal.</li>
+                            <li>Summarise why you fell behind and how you can make up the payments.</li>
+                            <li>Offer to pay a little extra for a few months if you can afford it.</li>
+                        </ul>
+
+                        <p>Describe how you will settle your debts including a statement about how your finances will
+                            improve
+                            due to some or all of the following:</p>
+                        <ul>
+                            <li>Increasing your income</li>
+                            <li>Receiving an insurance pay-out</li>
+                            <li>Seeking financial assistance from the government</li>
+                            <li>Taking out a loan.</li>
+                        </ul>
+                        <p>Mention anything good about your previous re-payment history and the equity built up in your
+                            home.
+                        </p>
+                    </section>
+                    <section>
+                        <h5>Free mortgage-rescue services you may qualify for</h5>
+                        <p>The UK’s Abhaile Scheme for mortgage arrears relief—see if you're eligible for free
+                            accountancy
+                            or
+                            legal advice.</p>
+                        <p>Contact Shelter or Civil Legal Advice to see if you can apply for other government benefits.
+                        </p>
+                    </section>
+                    <section>
+                        <h5>Has your lender filed a claim against you?</h5>
+                        <ul>
+                            <li>Gather evidence to demonstrate to the judge that you are sincere in your desire to be
+                                reasonable
+                                and take responsibility moving forward.</li>
+                            <li>Contact your county court and request information on free legal representationyou’re
+                                your
+                                hearing.</li>
+                            <li>Collect supporting information, such as letters you’ve written to the lender attempting
+                                to
+                                renegotiate your mortgage, as evidence you’ve been cooperating with your lender.</li>
+                            <li>Take all your financial documents, the defence form, and proof of any benefits claims
+                                you've
+                                made with you when you attend court. The judge is more likely to side with you—perhaps
+                                by
+                                giving
+                                you more time or a more reasonable repayment plan—if you go prepared.</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h5>If the court hearing fails and a repossession order is made</h5>
+                        <ul>
+                            <li>Take legal advice on filing a new order to suspend the possession order.</li>
+                            <li>Ask your lender to renegotiate the terms and repeal the repossession order.</li>
+                            <li>Consider a bridging loan to repay your mortgage arrears and stop repossession.</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h5>Stopping repossession</h5>
+                        <h6>YOU DON’T HAVE TO LOSE YOUR HOUSE</h6>
+                        <p>Our Legal Team will prevent the repossession from going ahead. We can save you property and
+                            allow
+                            enable you to retain equity.</p>
+                        <h6>TAKE HEED OF COURT LETTERS</h6>
+                        <p>Take note of them and then act quickly by calling for help right away. Delay increases the
+                            risk
+                            of
+                            losing your property. To avoid repossession, we offer targeted debt stop repossession
+                            packages.
+                        </p>
+                        <h6>WE CAN STOP YOUR REPOSSESSION!</h6>
+                        <p>Let us deal with the distress. All our clients get a stress free service that addresses head
+                            on
+                            you
+                            financial problems. Our repossession experts have extensive experience in dealing with both
+                            lenders
+                            and the Courts.</p>
+                    </section>
+                    <section>
+                        <h5>FREE LEGAL DEFENCE</h5>
+                        <p>We can stop your repossession at any stage; our legal team will make an emergency application
+                            to
+                            HM
+                            Courts.</p>
+                        <p>We will provide an expert defence and attend Court on your behalf to ensure the repossession
+                            is
+                            stopped. This in turn will enable us to find the most suitable options for you.</p>
+                        <p>Many thousands of people have faced the threat of repossession, but by contacting us we will
+                            stop
+                            the
+                            repossession, and save the equity in your home. Furthermore, you can <span
+                                class="bold red">stay
+                                back rent free.</span></p>
+                        <p>There are always options.</p>
+                        <p>Call, email or complete our online form and a member of our team will contact you right away.
+                        </p>
+                    </section>
+                    <section>
+                        <h5>We buy now</h5>
+                        <h6>We Can Stop Your House Repossession Cold by Offering a quick cash purchase.</h6>
+                        <p>Let Our Repossession Experts Help You</p>
+                        <p>If you are facing repossession or struggling to make your mortgage payments—the time to act
+                            is
+                            now.
+                            Get
+                            you house sold fast.</p>
+                        <p>We have been buying and selling property for over XX years. Research shows that on average we
+                            pay
+                            up
+                            to
+                            £25,000 more than our competition for properties in the right location and condition.</p>
+                        <p>If you want to sell your house fast- we can make you an offer Today.</p>
+                    </section>
+                    <section>
+                        <h5>Stop Repossession Within Days or even hours</h5>
+                        <p>By complete the form opposite you could agree a sale within hours. Maybe even TODAY.</p>
+                        <p>You could be days away from banking the cash.</p>
+                        <p>Depending on the speed at which you need to sell we can complete a sale in as little as a
+                            week.
+                            Our
+                            average time to complete is just 4-6 weeks.</p>
+                        <p>We can pay you cash. And because there’s no chain, once the sale is agreed, life can begin
+                            again.</p>
+                    </section>
+                    <section>
+                        <h5>Stop Your House Being Repossessed Right Now</h5>
+                        <p>We will buy property that’s in any condition and in any price range.</p>
+                        <p>As soon as you contact us we will check the price of property recently sold in your area and
+                            make you an immediate offer.</p>
+                        <p>Don’t forget you could make a chain-free 'cash' sale in as little as 7 days!</p>
+                        <p>Let us make an offer on your property NOW!</p>
+                    </section>
+                    <section>
+                        <h5>Do you need to submit an N244 form? Or negotiate with your lender? Call us now for help on
+                            <a href="#" class="red bold">0800 286 055</a>
+                        </h5>
+                        <h6>The N244 Form (N244 Application Notice)</h6>
+                        <p>The N244 form is used by the County Court for a range of different applications. We use the
+                            N244 Form to apply for an Emergency Court Hearing. This gets your case in front of a Judge
+                            so they can decide on whether or not to Suspend your Eviction Notice.</p>
+                        <h6>Submitting an N244 Application Form.</h6>
+                        <p>An N244 Application cannot delay or stop your eviction, but if used in the right manner will
+                            allow you an Emergency Court Hearing that with our help will stop your eviction.</p>
+                        <p>So it’s important to get things right. Our experience means that we can complete the N244
+                            Application to enable an Emergency Court Hearing that will stop your eviction order and save
+                            your house.</p>
+                    </section>
+                    <section>
+                        <h5>We Want To Help</h5>
+                        <p>No matter how hopeless you feel your situation is, we can help. We succeed in helping almost
+                            everyone who seeks our help. But If we feel we are unable to help for any reason, we will
+                            tell you up-front while still giving you any advice you might need.</p>
+                        <p>So don't hesitate to call us. We can save your house.</p>
+                        <h6>Acting Swiftly.</h6>
+                        <p>Only if submitted to the court and completed correctly can an N244 application delay or stop
+                            a repossession. And with the right legal assistance and representation in court, an
+                            emergency hearing can prevent eviction. Our extensive experience with property law matters
+                            means that we have the expertise to apply to the court correctly, garner an emergency
+                            hearing, and stop the eviction order on your home.</p>
+                        <h6>The Process</h6>
+                        <p>Far from being straightforward, the N244 application needs to take account of many factors
+                            before submission. Furthermore, it needs to be submitted in a timely fashion and it must be
+                            done right.</p>
+                        <ul>
+                            <li>You must have sufficient grounds to file the N244. Having “nowhere to go” is not
+                                sufficient. We will establish the grounds for you and complete your form once we have
+                                assessed your case.</li>
+                            <li>The content of the N244 application must be detailed, but kept succinct. Providing
+                                just enough information to get an Emergency Court Hearing. We will complete the N244
+                                Application form for you to get you hearing assessed by a judge.</li>
+                            <li>You must have an appropriate defence. We will prepare the best defence possible for
+                                you before any contact with the courts is made.</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h5>The Hearing</h5>
+                        <p>The Emergency Hearing is your last opportunity to save your home without having to clear your
+                            arrears. Because it is so crucial, we will do our utmost to help you and stop the eviction.
+                        </p>
+                        <p>Should you not contact us, and the hearing go against you, there is an appeals process.
+                            However, it is best avoided as it is very difficult to overturn. Avoid putting yourself in
+                            that position by calling us to get it right on the first time.</p>
+                    </section>
+                    <section>
+                        <h5>Stopping Repossession for Mortgage or Rent Arrears</h5>
+                        <p>The threat of legal proceedings for repossession can be very distressing, regardless of if
+                            you are a home-owner or a tenant. And whether proceeding were started by the mortgage lender
+                            or by a public or private property owner, most find the paperwork, harassment and
+                            uncertainty to be deeply distressing.</p>
+                        <p>If you are faced with legal action for non-payment of mortgage or rent, we can help.</p>
+                        <h6>Using the N244 Form to Stop Repossession</h6>
+                        <p>Act quickly to stop the eviction. Using an N244 form to apply for an emergency court hearing
+                            allows us to present your case to a judge. Critically, we can attend the hearing on your
+                            behalf, inform the court of the necessary facts, and present your case persuasively.</p>
+                        <p>The judge who hears your case will decide whether or not to suspend the eviction notice and
+                            halt proceedings your lender has made.</p>
+                        <h6>Defending Your Home</h6>
+                        <p>As previously stated, the N244 online application is not straightforward. Some key steps to
+                            follow:</p>
+                        <ul>
+                            <li>Present the application correctly and in ample time.</li>
+                            <li>THIS SECTION IS JUST A REPEAT OF WHAT WAS PREVIOUSLY WRITTEN</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h5>Helping to win the repossession hearing</h5>
+                        <p>The emergency hearing is the last opportunity you will have to save your home without
+                            necessarily having to pay your rent or mortgage arrears in full at that time. </p>
+                        <p>We will support you at this vital juncture to secure a positive outcome and prevent a
+                            possible eviction.</p>
+                        <p>Those who have a low-income or who are in receipt of benefits may be entitled to remission of
+                            fees—exemption from court fees.</p>
+                        <p>Should you not contact us, and the hearing go against you, there is an appeals process.
+                            However, it is best avoided as it is very difficult to overturn. Avoid putting yourself in
+                            that position by calling us to get it right the first time. However, if you have already
+                            lost your hearing and are looking to appeal, then by all means, please get in touch and we
+                            will be happy to advise you.</p>
+                    </section>
+                </div>
+            </div>
+        </li>
+
+        <li class="accordion-item" id="free">
+            <input type="checkbox" class="checkbox" name="checkbox" id="tab-two" data-group="group4" />
+            <label for="tab-two" onclick="rotateImage2();">
+                <div class="label-icon">
+                    <div class="dot"></div>
+                </div>
+                <h6>Free Legal Representation</h6>
+                <img class="caret" id="caret2" src="assets/caret.svg" alt="">
+            </label>
+
+            <div class="panel">
+                <div class="panel-content">
+                    <section>
+                        <h5>We Do Not Just Instruct Random Solicitors to Attend Court in the Hope They Can Stop Your
+                            Eviction. </h5>
+                        <p>This is an area of great significance and is extremely important to us at SHR. At this stage
+                            we
+                            prioritise providing you the best legal representation, knowing full well that the incorrect
+                            team of solicitors or lawyers who don’t have the experience required could quite possibly
+                            have
+                            devastating results at court and a high probability of you losing your property. At SHR we
+                            therefore take no chances and only instruct our trusted, experienced London based lawyers
+                            and
+                            barristers who have vast knowledge in this area of high-risk defence. You will receive
+                            representation from some of the most experienced and respected UK legal experts all at no
+                            cost
+                            to you. At SHR we do not gamble with solicitors who do not have a track record of success in
+                            this field. It is your property at stake, so trust us, as we are here to get results. </p>
+                        <p>The N244 applications are prepared by our legal team, approved by the court and evictions are
+                            cancelled. You do not have to lose your equity or property to the bank. </p>
+                        <p>Simply call <a href="#" class="red bold">0800 286 055</a></p>
+                    </section>
+                </div>
+            </div>
+        </li>
+        <li class="accordion-item" id="n244">
+            <input type="checkbox" class="checkbox" id="tab-three" data-group="group3" />
+            <label for="tab-three" onclick="rotateImage3();">
+                <div class="label-icon">
+                    <div class="dot"></div>
+                </div>
+                <h6>N244 Court Applications</h6>
+                <img class="caret" id="caret3" src="assets/caret.svg" alt="">
+            </label>
+
+            <div class="panel">
+                <div class="panel-content">
+                    <section>
+                        <h5 class="toph5">How to Stop A House Repossession Order </h5>
+                        <h6>How Can I Stop a Repossession Order?</h6>
+                        <p>
+                            Despite what you may have heard or read a repossession order can be stopped at any time
+                            before
+                            the
+                            eviction date.
+                        </p>
+                        <h6>The options to avoid repossession of your house:</h6>
+                        <ol>
+                            <li>Create a plan to settle your outstanding mortgage debt.</li>
+                            <li>Write to your lender to re-negotiate your mortgage.</li>
+                            <li>Apprise yourself of the free mortgage-rescue services you might qualify for.</li>
+                            <li>If a claim has already been filed a claim against you, then:
+                                <ul class="no-border">
+                                    <li>Prepare your evidence</li>
+                                    <li>Get legal representation for your repossession hearing.</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </section>
+                    <section>
+                        <h5>Is a cheaper mortgage available to you?</h5>
+                        <p>You may need to re-finance to settle what’s owed to your current lender, but by transferring
+                            your
+                            mortgage elsewhere you may have lower monthly payments.</p>
+                    </section>
+                    <section>
+                        <h5>If your lender gave you a temporary break, could you keep your repayment schedule and catch
+                            up?
+                        </h5>
+                        <p>Then ask them to reduce or temporarily stop your re-payments for a short time. Alternatively
+                            it
+                            may
+                            be worth asking them to extend the term of your mortgage to reduce you payments ( though
+                            this
+                            will
+                            result in more interest being paid overall).</p>
+                    </section>
+                    <section>
+                        <h5>Are you in a shared-ownership scheme?</h5>
+                        <p>Look at selling back a portion of your ownership to the landlord to vary the terms of your
+                            flexible
+                            tenure.</p>
+                    </section>
+                    <section>
+                        <h5>Are you at your wit’s end because none of these options seem practical?</h5>
+                        <p>Then your nearest Citizens Advice Bureau can offer free help from a professional debt
+                            adviser.
+                            They
+                            could suggest your best course of action is to contact someone like us to arange financing
+                            to
+                            stop
+                            the repossession of your house.</p>
+                    </section>
+                    <section>
+                        <h5>Attempt to renegotiate your mortgage—write to your lender</h5>
+                        <ul>
+                            <li>Get the address and a name of the person or department handling your loan.</li>
+                            <li>Avoid using emotional language, be polite and formal.</li>
+                            <li>Summarise why you fell behind and how you can make up the payments.</li>
+                            <li>Offer to pay a little extra for a few months if you can afford it.</li>
+                        </ul>
+
+                        <p>Describe how you will settle your debts including a statement about how your finances will
+                            improve
+                            due to some or all of the following:</p>
+                        <ul>
+                            <li>Increasing your income</li>
+                            <li>Receiving an insurance pay-out</li>
+                            <li>Seeking financial assistance from the government</li>
+                            <li>Taking out a loan.</li>
+                        </ul>
+                        <p>Mention anything good about your previous re-payment history and the equity built up in your
+                            home.
+                        </p>
+                    </section>
+                    <section>
+                        <h5>Free mortgage-rescue services you may qualify for</h5>
+                        <p>The UK’s Abhaile Scheme for mortgage arrears relief—see if you're eligible for free
+                            accountancy
+                            or
+                            legal advice.</p>
+                        <p>Contact Shelter or Civil Legal Advice to see if you can apply for other government benefits.
+                        </p>
+                    </section>
+                    <section>
+                        <h5>Has your lender filed a claim against you?</h5>
+                        <ul>
+                            <li>Gather evidence to demonstrate to the judge that you are sincere in your desire to be
+                                reasonable
+                                and take responsibility moving forward.</li>
+                            <li>Contact your county court and request information on free legal representationyou’re
+                                your
+                                hearing.</li>
+                            <li>Collect supporting information, such as letters you’ve written to the lender attempting
+                                to
+                                renegotiate your mortgage, as evidence you’ve been cooperating with your lender.</li>
+                            <li>Take all your financial documents, the defence form, and proof of any benefits claims
+                                you've
+                                made with you when you attend court. The judge is more likely to side with you—perhaps
+                                by
+                                giving
+                                you more time or a more reasonable repayment plan—if you go prepared.</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h5>If the court hearing fails and a repossession order is made</h5>
+                        <ul>
+                            <li>Take legal advice on filing a new order to suspend the possession order.</li>
+                            <li>Ask your lender to renegotiate the terms and repeal the repossession order.</li>
+                            <li>Consider a bridging loan to repay your mortgage arrears and stop repossession.</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h5>Stopping repossession</h5>
+                        <h6>YOU DON’T HAVE TO LOSE YOUR HOUSE</h6>
+                        <p>Our Legal Team will prevent the repossession from going ahead. We can save you property and
+                            allow
+                            enable you to retain equity.</p>
+                        <h6>TAKE HEED OF COURT LETTERS</h6>
+                        <p>Take note of them and then act quickly by calling for help right away. Delay increases the
+                            risk
+                            of
+                            losing your property. To avoid repossession, we offer targeted debt stop repossession
+                            packages.
+                        </p>
+                        <h6>WE CAN STOP YOUR REPOSSESSION!</h6>
+                        <p>Let us deal with the distress. All our clients get a stress free service that addresses head
+                            on
+                            you
+                            financial problems. Our repossession experts have extensive experience in dealing with both
+                            lenders
+                            and the Courts.</p>
+                    </section>
+                    <section>
+                        <h5>FREE LEGAL DEFENCE</h5>
+                        <p>We can stop your repossession at any stage; our legal team will make an emergency application
+                            to
+                            HM
+                            Courts.</p>
+                        <p>We will provide an expert defence and attend Court on your behalf to ensure the repossession
+                            is
+                            stopped. This in turn will enable us to find the most suitable options for you.</p>
+                        <p>Many thousands of people have faced the threat of repossession, but by contacting us we will
+                            stop
+                            the
+                            repossession, and save the equity in your home. Furthermore, you can <span
+                                class="bold red">stay
+                                back rent free.</span></p>
+                        <p>There are always options.</p>
+                        <p>Call, email or complete our online form and a member of our team will contact you right away.
+                        </p>
+                    </section>
+                    <section>
+                        <h5>We buy now</h5>
+                        <h6>We Can Stop Your House Repossession Cold by Offering a quick cash purchase.</h6>
+                        <p>Let Our Repossession Experts Help You</p>
+                        <p>If you are facing repossession or struggling to make your mortgage payments—the time to act
+                            is
+                            now.
+                            Get
+                            you house sold fast.</p>
+                        <p>We have been buying and selling property for over XX years. Research shows that on average we
+                            pay
+                            up
+                            to
+                            £25,000 more than our competition for properties in the right location and condition.</p>
+                        <p>If you want to sell your house fast- we can make you an offer Today.</p>
+                    </section>
+                    <section>
+                        <h5>Stop Repossession Within Days or even hours</h5>
+                        <p>By complete the form opposite you could agree a sale within hours. Maybe even TODAY.</p>
+                        <p>You could be days away from banking the cash.</p>
+                        <p>Depending on the speed at which you need to sell we can complete a sale in as little as a
+                            week.
+                            Our
+                            average time to complete is just 4-6 weeks.</p>
+                        <p>We can pay you cash. And because there’s no chain, once the sale is agreed, life can begin
+                            again.</p>
+                    </section>
+                    <section>
+                        <h5>Stop Your House Being Repossessed Right Now</h5>
+                        <p>We will buy property that’s in any condition and in any price range.</p>
+                        <p>As soon as you contact us we will check the price of property recently sold in your area and
+                            make you an immediate offer.</p>
+                        <p>Don’t forget you could make a chain-free 'cash' sale in as little as 7 days!</p>
+                        <p>Let us make an offer on your property NOW!</p>
+                    </section>
+                    <section>
+                        <h5>Do you need to submit an N244 form? Or negotiate with your lender? Call us now for help on
+                            <a href="#" class="red bold">0800 286 055</a>
+                        </h5>
+                        <h6>The N244 Form (N244 Application Notice)</h6>
+                        <p>The N244 form is used by the County Court for a range of different applications. We use the
+                            N244 Form to apply for an Emergency Court Hearing. This gets your case in front of a Judge
+                            so they can decide on whether or not to Suspend your Eviction Notice.</p>
+                        <h6>Submitting an N244 Application Form.</h6>
+                        <p>An N244 Application cannot delay or stop your eviction, but if used in the right manner will
+                            allow you an Emergency Court Hearing that with our help will stop your eviction.</p>
+                        <p>So it’s important to get things right. Our experience means that we can complete the N244
+                            Application to enable an Emergency Court Hearing that will stop your eviction order and save
+                            your house.</p>
+                    </section>
+                    <section>
+                        <h5>We Want To Help</h5>
+                        <p>No matter how hopeless you feel your situation is, we can help. We succeed in helping almost
+                            everyone who seeks our help. But If we feel we are unable to help for any reason, we will
+                            tell you up-front while still giving you any advice you might need.</p>
+                        <p>So don't hesitate to call us. We can save your house.</p>
+                        <h6>Acting Swiftly.</h6>
+                        <p>Only if submitted to the court and completed correctly can an N244 application delay or stop
+                            a repossession. And with the right legal assistance and representation in court, an
+                            emergency hearing can prevent eviction. Our extensive experience with property law matters
+                            means that we have the expertise to apply to the court correctly, garner an emergency
+                            hearing, and stop the eviction order on your home.</p>
+                        <h6>The Process</h6>
+                        <p>Far from being straightforward, the N244 application needs to take account of many factors
+                            before submission. Furthermore, it needs to be submitted in a timely fashion and it must be
+                            done right.</p>
+                        <ul>
+                            <li>You must have sufficient grounds to file the N244. Having “nowhere to go” is not
+                                sufficient. We will establish the grounds for you and complete your form once we have
+                                assessed your case.</li>
+                            <li>The content of the N244 application must be detailed, but kept succinct. Providing
+                                just enough information to get an Emergency Court Hearing. We will complete the N244
+                                Application form for you to get you hearing assessed by a judge.</li>
+                            <li>You must have an appropriate defence. We will prepare the best defence possible for
+                                you before any contact with the courts is made.</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h5>The Hearing</h5>
+                        <p>The Emergency Hearing is your last opportunity to save your home without having to clear your
+                            arrears. Because it is so crucial, we will do our utmost to help you and stop the eviction.
+                        </p>
+                        <p>Should you not contact us, and the hearing go against you, there is an appeals process.
+                            However, it is best avoided as it is very difficult to overturn. Avoid putting yourself in
+                            that position by calling us to get it right on the first time.</p>
+                    </section>
+                    <section>
+                        <h5>Stopping Repossession for Mortgage or Rent Arrears</h5>
+                        <p>The threat of legal proceedings for repossession can be very distressing, regardless of if
+                            you are a home-owner or a tenant. And whether proceeding were started by the mortgage lender
+                            or by a public or private property owner, most find the paperwork, harassment and
+                            uncertainty to be deeply distressing.</p>
+                        <p>If you are faced with legal action for non-payment of mortgage or rent, we can help.</p>
+                        <h6>Using the N244 Form to Stop Repossession</h6>
+                        <p>Act quickly to stop the eviction. Using an N244 form to apply for an emergency court hearing
+                            allows us to present your case to a judge. Critically, we can attend the hearing on your
+                            behalf, inform the court of the necessary facts, and present your case persuasively.</p>
+                        <p>The judge who hears your case will decide whether or not to suspend the eviction notice and
+                            halt proceedings your lender has made.</p>
+                        <h6>Defending Your Home</h6>
+                        <p>As previously stated, the N244 online application is not straightforward. Some key steps to
+                            follow:</p>
+                        <ul>
+                            <li>Present the application correctly and in ample time.</li>
+                            <li>THIS SECTION IS JUST A REPEAT OF WHAT WAS PREVIOUSLY WRITTEN</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h5>Helping to win the repossession hearing</h5>
+                        <p>The emergency hearing is the last opportunity you will have to save your home without
+                            necessarily having to pay your rent or mortgage arrears in full at that time. </p>
+                        <p>We will support you at this vital juncture to secure a positive outcome and prevent a
+                            possible eviction.</p>
+                        <p>Those who have a low-income or who are in receipt of benefits may be entitled to remission of
+                            fees—exemption from court fees.</p>
+                        <p>Should you not contact us, and the hearing go against you, there is an appeals process.
+                            However, it is best avoided as it is very difficult to overturn. Avoid putting yourself in
+                            that position by calling us to get it right the first time. However, if you have already
+                            lost your hearing and are looking to appeal, then by all means, please get in touch and we
+                            will be happy to advise you.</p>
+                    </section>
+                </div>
+            </div>
+            </div>
+        </li>
+        <li class="accordion-item" id="highcounty">
+            <input type="checkbox" class="checkbox" id="tab-four" data-group="group5" />
+            <label for="tab-four" onclick="rotateImage4();">
+                <div class="label-icon">
+                    <div class="dot"></div>
+                </div>
+                <h6>High Court & County Court</h6>
+                <img class="caret" id="caret4" src="assets/caret.svg" alt="">
+            </label>
+
+            <div class="panel">
+                <p>
+                    Secured Finance is when the borrower has given their consent for a lender to place a legal
+                    charge over a certain asset or assets, such as a property, a vehicle or other tangible items
+                    which hold value. If the client serially defaults in payment, the lender has the legal right
+                    to seize control of the asset and sell it to settle the balance of the loan outstanding.
+                    There is a lower risk for a lender to offer secured finance and this should be reflected in
+                    the pay rate. Lenders quite often ask for some form of security if profit margins are tight,
+                    or if they want slightly more comfort with the arrangement to lend. With further security
+                    and increased lender comfort, lower interest rates are acquired for our clients.
+                </p>
+            </div>
+        </li>
+        <li class="accordion-item" id="tbr">
+            <input type="checkbox" class="checkbox" id="tab-five" data-group="group6" />
+            <label for="tab-five" onclick="rotateImage5();">
+                <div class="label-icon">
+                    <div class="dot"></div>
+                </div>
+                <h6>Trustees - Bankruptcy - Receivers</h6>
+                <img class="caret" id="caret5" src="assets/caret.svg" alt="">
+            </label>
+
+            <div class="panel">
+                <div class="panel-content">
+                    <section>
+                        <p>Part of our team of experts and insolvency practitioners is a specialist department that
+                            solely handle negotiations and resolve disputes with trustees in bankruptcy, receivers and
+                            LPA receivers. These firms are usually appointed by the banks, mortgage providers or bridge
+                            finance companies, to move in, take control and legally sell a property in order to pay back
+                            all debt or money owed by the homeowner to the lenders that have been secured by way of a
+                            legal charge. </p>
+                        <p>Our specialist legal team have vast knowledge and years of experience in this complex area
+                            and are more than willing to help owners who are facing imminent bankruptcy, still in a
+                            bankruptcy or even just out of a bankruptcy term. We are here to help clients who are in
+                            need of specialist expert advice on how to hold onto their property. Our team will
+                            vigorously negotiate the best deal on your behalf, in order to prevent lenders from
+                            instructing receivers in the first place. Situations such as these always escalate when
+                            homeowners delay and don’t act quickly. </p>
+                        <p>We are simply one call away <a href="#" class="red bold">0800 286 055</a></p>
+                    </section>
+                </div>
+            </div>
+        </li>
+        <li class="accordion-item">
+            <input type="checkbox" class="checkbox" id="tab-six" />
+            <label for="tab-six" onclick="rotateImage6();">
+                <div class="label-icon">
+                    <div class="dot"></div>
+                </div>
+                <h6>Rent Free & Mortgage Free</h6>
+                <img class="caret" id="caret6" src="assets/caret.svg" alt="">
+            </label>
+
+            <div class="panel">
+                <div class="panel-content">
+                    <section>
+                        <p>A rent-free period and no mortgage payments is one of the options you may wish to select.
+                            Firstly, we would have to stop any repossession proceeding you may be facing and cancel any
+                            immanent court eviction notices. Stopping all court action would be handled by our legal
+                            defence team at no cost to yourselves. Once this has been successfully achieved, we can
+                            proceed to the next stage, discuss in detail all options available to you and even arrange
+                            for a free home visit. Whichever option you select, remember your repossession or eviction
+                            need to be stopped first.</p>
+                        <p>Please don’t delay, if you receive a repossession order or court eviction notice in the post,
+                            call us immediately for a free confidential, no obligation chat <a href="#"
+                                class="red bold">0800 286 055</a></p>
+                    </section>
+                </div>
+            </div>
+        </li>
+        <li class="accordion-item" id="whychoose">
+            <input type="checkbox" class="checkbox" name="tab-seven" id="tab-seven" data-group="group1" />
+            <label for="tab-seven" onclick="rotateImage7();">
+                <div class="label-icon">
+                    <div class="dot"></div>
+                </div>
+                <h6>Why Choose Us?</h6>
+                <img class="caret" id="caret7" src="assets/caret.svg" alt="">
+            </label>
+
+            <div class="panel">
+                <div class="panel-content">
+                    <section>
+                        <h5>Homeowners Choose SHR for Many Justifiable Reasons. </h5>
+                        <p>It’s not just because we do not charge for our exceptional service. </p>
+                        <p>It’s not just that we respond within minutes of receiving your enquiry.</p>
+                        <p>It’s not just because our legal team are ready to step in and stop your eviction or
+                            repossession
+                            at court, at very short notice. </p>
+                        <p>It’s not just that we offer you multiple options to take back control of your property and
+                            not
+                            let your lender repossess. </p>
+                        <p>It’s a combination of the above, plus several further factors that SHR can offer our clients.
+                            We
+                            firmly stand behind our core code of practice that we have adhered to at the very start.
+                        </p>
+                        <ul>
+                            <li>Exceptional level of customer service from start to finish. </li>
+                            <li>A dedicated, highly experienced and committed team by your side. </li>
+                            <li>A trusted, specialist team of lawyers that have the know-how and your best interest at
+                                heart, who will not let you down.</li>
+                        </ul>
+                        <p>Why not utilise and lean on our vast experience in stopping repossessions and evictions. Take
+                            advantage of our years of knowledge and expertise in this field. We are here to help and
+                            resolve
+                            any issues you may encounter, fast.</p>
+                        <p>Once we have assessed your circumstances and requirements, we will work closely with you to
+                            achieve the best resolution, quickly. </p>
+                        <p>Call <a href="#" class="red bold">0800 286 055</a> </p>
+                </div>
+                </section>
+            </div>
+        </li>
+        <li class="accordion-item">
+            <input type="checkbox" class="checkbox" id="tab-eight" />
+            <label for="tab-eight" onclick="rotateImage8();">
+                <div class="label-icon">
+                    <div class="dot"></div>
+                </div>
+                <h6>Our Team</h6>
+                <img class="caret" id="caret8" src="assets/caret.svg" alt="">
+            </label>
+
+            <div class="panel">
+                <div class="panel-content">
+                    <section>
+                        <h5>You Can Not Be in Safer Hands. We Pride Ourselves on Our Team of Experts. </h5>
+                        <p>A professional experience and extremely knowledgeable team that fully understand how lenders,
+                            banks, mortgage companies and courts operate when it comes to repossessions and evictions.
+                            Here at SHR we also have vast experience in how trustees in bankruptcy and receivers
+                            function, our team are accustomed to working under pressure, time restraints and strict
+                            deadlines, knowing full well that accurate, swift action is required in order to stop
+                            evictions. At SHR we have every possible angle covered by way of specialist personal
+                            including: </p>
+                        <ul>
+                            <li>Specialist Lawyers</li>
+                            <li>High Court Barristers</li>
+                            <li>Insolvency Experts</li>
+                            <li>Court Advocates</li>
+                            <li>Property Experts</li>
+                            <li>Surveyors/ Valuers</li>
+                            <li>Financial Experts</li>
+                            <li>Registered Chartered Accountants</li>
+                            <li>Property Investors and Funders</li>
+                        </ul>
+                        <p>We are always available to represent you and ready when it comes to stopping evictions and
+                            repossessions. We are fully prepared and can handle all obstacles and complex cases
+                            successfully, including legal final demands, repossession orders and court eviction notices
+                            that you may be faced with at short notice. </p>
+                        <p>We are simply one call away <a href="#" class="red bold">0800 286 055</a></p>
+                    </section>
+                </div>
+            </div>
+        </li>
+        <li class="accordion-item">
+            <input type="checkbox" class="checkbox" id="tab-nine" />
+            <label for="tab-nine" onclick="rotateImage9();">
+                <div class="label-icon">
+                    <div class="dot"></div>
+                </div>
+                <h6>Simple Process</h6>
+                <img class="caret" id="caret9" src="assets/caret.svg" alt="">
+            </label>
+
+            <div class="panel">
+                <div class="panel-content">
+                    <section>
+                        <h5>Simple, Straight-Forward Process. </h5>
+                        <p>Here at SHR we will keep the process very straight forward and simple. From the moment you
+                            instruct us, we will immediately take control in order to eliminate your stress, pressures
+                            and concerns that you may have in regards to losing your property</p>
+                        <p>We will firstly focus on halting any legal or court action against you, therefore stopping a
+                            possible repossession or eviction going ahead, with a watertight N244 application through
+                            our emergency legal defence team. Once this has been achieved and your repossession or
+                            eviction has been stopped, we will advise you on several options and put in place a solution
+                            that best suits you and relieve you of your fears and financial pressures. </p>
+                    </section>
+                </div>
+            </div>
+        </li>
+        <li class="accordion-item">
+            <input type="checkbox" class="checkbox" id="tab-ten" />
+            <label for="tab-ten" onclick="rotateImage10();">
+                <div class="label-icon">
+                    <div class="dot"></div>
+                </div>
+                <h6>Maximise Your Equity</h6>
+                <img class="caret" id="caret10" src="assets/caret.svg" alt="">
+            </label>
+
+            <div class="panel">
+                <div class="panel-content">
+                    <section>
+                        <p>We fully appreciate the panic and distress when a homeowner receives a repossession order, or
+                            even worse a court eviction notice through the post. This can be a very unpleasant and
+                            unsettling time. We understand why many homeowners feel the need to act quickly by
+                            contacting
+                            fast house buyers, selling quickly and cheap. Here at SHR we operate differently, we can
+                            guarantee and give you the assurance you so need, that it isn’t necessary to go down the
+                            fast
+                            sale route.
+                        </p>
+                        <p>We can help you with far better options that will benefit you now, and in the future, leaving
+                            you
+                            better off financially. Why give your equity away when there is absolutely no need? </p>
+                        <p>All you need to do is call us free on: <a href="#" class="red bold">0800 286 055</a> for a
+                            free confidential chat, help and correct
+                            advice.</p>
+                </div>
+                </section>
+            </div>
+        </li>
+        <li class="accordion-item">
+            <input type="checkbox" class="checkbox" id="tab-eleven" />
+            <label for="tab-eleven" onclick="rotateImage11();">
+                <div class="label-icon">
+                    <div class="dot"></div>
+                </div>
+                <h6>Don't Lose Your Property</h6>
+                <img class="caret" id="caret11" src="assets/caret.svg" alt="">
+            </label>
+
+            <div class="panel">
+                <div class="panel-content">
+                    <section>
+                        <p>At this moment in time, it may seem you have no other option and it’s inevitable that your
+                            bank
+                            or mortgage provider will take possession of your property, forcing you to consider selling
+                            your
+                            house cheaply to cash house buyer. At SHR we can offer alternative, better options and
+                            solutions. If you are at this stage of enforcement; <span class="red bold">Do Not Ignore
+                                Demands or Court Notices</span>. You
+                            need to take swift action immediately by contacting us, so we can instruct our experienced
+                            legal
+                            team to stop and avoid your property from being repossessed. Our legal team can still help
+                            any
+                            court action against you, even if you have been to court with an N244 application on
+                            previous
+                            occasions regarding an eviction relating to the same property. This will then allow time for
+                            us
+                            to go through all of your options and select a package that is best suited for you and get
+                            you
+                            back on the road to recovery without losing your property. </p>
+                    </section>
+                </div>
+            </div>
+        </li>
+    </ul>
 </body>
 
 </html>

@@ -7,7 +7,9 @@
   padding: 0;
   margin: 0;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   word-wrap: break-word !important;
   font-family: 'Open Sans', sans-serif;
@@ -36,7 +38,7 @@ h5 {
   font-weight: 900;
 }
 h6 {
-  font-size: 1.3vw;
+  font-size: 1.5vw;
   font-weight: 900;
 }
 
@@ -48,6 +50,20 @@ a:visited {
 }
 .red {
   color: red;
+}
+.bold {
+  font-weight: 800;
+}
+.rotate {
+  -ms-transform: rotate(180deg);
+   -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.normal {
+  -ms-transform: rotate(0deg);
+   -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
 }
 
 /* Supra-Nav    Supra-Nav   Supra-Nav
@@ -120,7 +136,7 @@ a:visited {
   width: 100%;
   list-style: none;
 }
-.navbar .menu li {
+.navbar .menu .menu-item {
   width: 14.275%;
   float: left;
   text-align: center;
@@ -128,7 +144,10 @@ a:visited {
   border-right: 5px solid white;
   box-sizing: border-box;
 }
-.navbar .menu li a {
+.navbar .menu .menu-item input {
+  display: none;
+}
+.navbar .menu .menu-item a {
   color: white;
   padding: 13px 0 20px 0;
   font-weight: 900;
@@ -166,6 +185,7 @@ a:visited {
   text-transform: uppercase;
   color: white;
   font-weight: 900;
+  width: 20vw;
  }
 .header .enquire-box a { 
   background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(153,153,153,1) 100%);
@@ -174,11 +194,12 @@ a:visited {
   font-size: 1.6vw;
 }
 .header .enquire-box p {
-  margin-top: 30px;
+  margin-top: 2vw;
+  font-size: 1.5vw;
 }
 .header .header-text {
   position: relative;
-  top: 31vw;
+  top: 25vw;
   text-align: center;
   color: white;
   text-transform: uppercase;
@@ -197,7 +218,7 @@ a:visited {
   width: 100%;
   background-color: black;
   color: white;
-  padding: 2vw 0;
+  padding: 2vw 0 5vw 0;
   text-align: center;
 }
 .sub-header h1, .sub-header h5 {
@@ -220,10 +241,10 @@ a:visited {
   padding: 3vw 0;
 }
 .two-col-flex .will-help {
-  width: 60%;
+  width: 65%;
 }
 .two-col-flex .submit-enquiry {
-  width: 25%;
+  width: 23%;
   text-align: center;
   text-transform: uppercase;
 }
@@ -232,7 +253,8 @@ a:visited {
 
 .two-col-flex .will-help .top-text p,
 .two-col-flex .will-help .bottom-text p { 
-  font-size: 1vw;
+  font-size: 1.2vw;
+  text-align: justify;
   font-weight: 600;
   margin-bottom: 1vw;
 }
@@ -250,12 +272,12 @@ a:visited {
   background: black;
   text-align: center;
   align-items: center;
-  margin: 0.5vw 0;
+  margin: 10px 0;
 }
 .two-col-flex .will-help .free-no-charge .flex .free {
   background: red;
   width: 10%;
-  padding: 1vw 0;
+  padding: 20px 0;
 }
 .two-col-flex .will-help .free-no-charge .flex .arrow {
   background-image: url(assets/arrow.svg);
@@ -263,7 +285,7 @@ a:visited {
   background-repeat: no-repeat;
   background-position: top left;
   width: 5%;
-  height: 3.75vw;
+  height: 66px;
 }
 .two-col-flex .will-help .free-no-charge .flex .blurb {
   width: 70%;
@@ -273,7 +295,8 @@ a:visited {
 }
 .two-col-flex .will-help .free-no-charge .flex .no-charge {
   background: red;
-  padding: 1vw 2vw;
+  padding: 20px 15px;
+  border-left: 5px solid white;
   width: 15%;
 }
 
@@ -327,6 +350,8 @@ a:visited {
  }
 .two-col-flex .will-help .we-can-container .we-can-box .we-can-flex img {
   width: 35px;
+  position: relative;
+  top: 5px;
 }
 .two-col-flex .will-help .we-can-container .we-can-box .we-can-flex h6 span {
   background-color: red;
@@ -477,7 +502,7 @@ a:visited {
   border-bottom: 5px solid black;
   width: 80%;
   margin: auto;
-  font-size: 2.2vw !important;
+  font-size: 2vw !important;
 }
 .two-col-flex .submit-enquiry .stop-action h4 {
   font-size: 1.64vw !important;
@@ -579,4 +604,166 @@ a:visited {
   width: 70%;
   margin: auto;
   font-weight: 600;
+}
+
+
+/* Accordion   Accordion    Accordion
+--------------------------------------------- */
+
+.accordion-wrapper {
+  width: 1300px;
+  margin: auto;
+  list-style: none;
+ }
+ .accordion-wrapper .accordion-item {
+   width: 100%;
+   margin-bottom: 20px;
+ }
+.accordion-wrapper .accordion-item input {
+  display: none;
+}
+.accordion-wrapper .accordion-item label {
+  display: flex;
+  align-items: center;
+  background-color: #f7f7f7;
+  padding: 0.5vw;
+  cursor: pointer;
+}
+.accordion-wrapper .accordion-item label .label-icon {
+  width: 25px;
+  height: 25px;
+  border: 3px solid black;
+}
+.accordion-wrapper .accordion-item label .label-icon .dot {
+  width: 12px;
+  height: 12px;
+  background: red;
+  border-radius: 100%;
+  margin: auto;
+  position: relative;
+  top: 6px;
+}
+.accordion-wrapper .accordion-item label h6 {
+  width: 97%;
+  margin-left: 0.5vw;
+  font-weight: 600;
+  font-size: 30px !important;
+}
+.accordion-wrapper .accordion-item .caret {
+  width: 25px;
+  margin-right: 10px;
+  transition: all 0.3s ease-in-out;
+  display: block;
+}
+.accordion-wrapper .accordion-item input:checked ~ .caret {
+  transform: rotate(180deg);
+  -webkit-transform:rotate(180deg);
+  -moz-transform:rotate(180deg);
+  -o-transform:rotate(180deg); 
+}
+.accordion-wrapper .accordion-item .panel {
+  position: relative;
+  clear: both;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-in-out;
+  z-index: 2;
+}
+.accordion-wrapper .accordion-item input:checked ~ .panel {
+  max-height: 10000px;
+}
+.accordion-wrapper .accordion-item .panel .panel-content {
+  line-height: 1.6;
+  width: 90%;
+  padding: 1vw 3vw;
+  margin: auto;
+}
+
+/* -------------------------------------------------- */
+
+.accordion-wrapper .accordion-item .panel .panel-content section {
+  background: #f7f7f7;
+  padding: 1vw 2vw;
+  margin-bottom: 2vw;
+  border-radius: 20px;
+}
+
+.accordion-wrapper .accordion-item .panel .panel-content h5 {
+  font-weight: 800;
+  text-decoration: underline;
+  text-decoration-color: red;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 6px;
+  margin: 1vw 0;
+  font-size: 26px;
+  /* text-transform: uppercase; */
+}
+.accordion-wrapper .accordion-item .panel .panel-content h6 {
+  font-weight: 700;
+  margin: 1.5vw 0 0 0;
+  font-size: 22px;
+}
+.accordion-wrapper .accordion-item .panel .panel-content p {
+  margin: 1vw 0;
+  font-size: 20px;
+  color: darkslategray;
+  width: 90%;
+}
+.accordion-wrapper .accordion-item .panel .panel-content ol,
+.accordion-wrapper .accordion-item .panel .panel-content ul {
+  padding: 1vw 3vw;
+  /* margin: 2vw 0; */
+  color: darkslategray;
+  font-size: 20px;
+  background-color: #ececec;
+  border: 3px dotted red;
+  border-radius: 30px;
+}
+.accordion-wrapper .accordion-item .panel .panel-content ol {
+  list-style: none;
+  counter-reset: my-awesome-counter;
+}
+.accordion-wrapper .accordion-item .panel .panel-content ol li {
+  counter-increment: my-awesome-counter;
+}
+.accordion-wrapper .accordion-item .panel .panel-content ol li::before {
+  content: counter(my-awesome-counter) ". ";
+  color: red;
+  font-weight: bold;
+}
+.accordion-wrapper .accordion-item .panel .panel-content ul {
+  list-style: none;
+}
+.accordion-wrapper .accordion-item .panel .panel-content ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: red;
+  font-weight: bold;
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+.accordion-wrapper .accordion-item .panel .panel-content li {
+  margin: 0.5vw 0;
+}
+.accordion-wrapper .accordion-item .panel .panel-content .toph5 {
+  margin: 1vw 0 2vw 0 !important;
+}
+.no-left-pad {
+  padding-left: 1vw !important;
+}
+.no-border {
+  border: none !important;
+}
+
+
+
+
+
+@media (max-width: 1400px) {
+  .accordion-wrapper {
+    width: 90%;
+  }
+  .accordion-wrapper .accordion-item label h6 {
+  font-size: 2vw !important;
+  }
 }
