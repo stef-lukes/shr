@@ -609,7 +609,10 @@ a:visited {
 
 /* Accordion   Accordion    Accordion
 --------------------------------------------- */
-
+.accordion-header {
+  text-align: center;
+  margin-bottom: 4vw;
+ } 
 .accordion-wrapper {
   width: 1300px;
   margin: auto;
@@ -757,7 +760,16 @@ a:visited {
   border: none !important;
 }
 
+/* 4 BOXES   4 BOXES    4 BOXES
+--------------------------------------------- */
 
+.boxes {
+  display: flex;
+  justify-content: center;
+ }
+.boxes .box-wrap {
+  width: 20%;
+} 
 
 
 

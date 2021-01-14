@@ -57,6 +57,10 @@
             var element = document.getElementById("caret1");
             element.classList.toggle("rotate");
         }
+        function rotateImage1() {
+            var element = document.getElementById("caret1A");
+            element.classList.toggle("rotate");
+        }
         function rotateImage2() {
             var element = document.getElementById("caret2");
             element.classList.toggle("rotate");
@@ -598,8 +602,46 @@
     <!-- ------------------- Accordion ------------------------- -->
     <!-- ------------------- Accordion ------------------------- -->
     <!-- ------------------- Accordion ------------------------- -->
-
+    <h2 class="accordion-header">SHR SERVICES - FOR MORE INFORMATION <span class="red">CLICK</span> BELOW</h2>
     <ul class="accordion-wrapper">
+        <li class="accordion-item" id="homepage">
+            <input type="checkbox" class="checkbox" id="tab-oneA" />
+            <label for="tab-oneA" onclick="rotateImage1();">
+                <div class="label-icon">
+                    <div class="dot"></div>
+                </div>
+                <h6>What We Do</h6>
+                <img class="caret" id="caret1A" src="assets/caret.svg" alt="">
+            </label>
+
+            <div class="panel">
+                <div class="panel-content">
+                    <section>
+                        <h5>Welcome to Stop House Repossessions.</h5>
+                        <h5>Repossessions and Evictions Stopped.</h5>
+                        <h5>Free Legal Court Representation.</h5>
+                        <p>Here at SHR, we work differently to our competitors. What we offer homeowners is quite unique
+                            and benefits clients in a more advantageous way. This is our area of expertise and as
+                            specialists in this field, we are totally 100% focused and committed to stopping
+                            repossessions and evictions for homeowners all around the UK.</p>
+                        <p>Together with our experienced dedicated team, our aim is to provide a professional, effective
+                            and extremely efficient service for all our clients, with no fees required. At SHR we offer
+                            options that differ from other companies, with solutions aimed to benefit you the homeowner
+                            without having to lose your property to the bank. We work to extremely strict deadlines
+                            because we fully appreciate and understand the importance and urgency when faced with a
+                            repossession order or court eviction notice. Our fast-operating model has been perfected to
+                            enable us together with our legal team to represent you at court regardless of what stage
+                            you are at. We will achieve the very best result and stop any action against you.</p>
+                        <p>As a company we pride ourselves on the service we offer and our high success rate in getting
+                            results. Our experienced team made up of lawyers, solicitors, property experts, chartered
+                            accountants, insolvency experts and funders will stop at nothing until all action against
+                            you is halted and a solution that suits you is found.</p>
+                        <p>At SHR we will immediately relieve you from financial pressures should you make the right
+                            choice and instruct us.</p>
+                    </section>
+                </div>
+            </div>
+        </li>
         <li class="accordion-item" id="evictions">
             <input type="checkbox" class="checkbox" id="tab-one" data-group="group2" />
             <label for="tab-one" onclick="rotateImage();">
@@ -613,121 +655,10 @@
             <div class="panel">
                 <div class="panel-content">
                     <section>
-                        <h5 class="toph5">How to Stop A House Repossession Order </h5>
-                        <h6>How Can I Stop a Repossession Order?</h6>
-                        <p>
-                            Despite what you may have heard or read a repossession order can be stopped at any time
-                            before
-                            the
-                            eviction date.
-                        </p>
-                        <h6>The options to avoid repossession of your house:</h6>
-                        <ol>
-                            <li>Create a plan to settle your outstanding mortgage debt.</li>
-                            <li>Write to your lender to re-negotiate your mortgage.</li>
-                            <li>Apprise yourself of the free mortgage-rescue services you might qualify for.</li>
-                            <li>If a claim has already been filed a claim against you, then:
-                                <ul class="no-border">
-                                    <li>Prepare your evidence</li>
-                                    <li>Get legal representation for your repossession hearing.</li>
-                                </ul>
-                            </li>
-                        </ol>
-                    </section>
-                    <section>
-                        <h5>Is a cheaper mortgage available to you?</h5>
-                        <p>You may need to re-finance to settle what’s owed to your current lender, but by transferring
-                            your
-                            mortgage elsewhere you may have lower monthly payments.</p>
-                    </section>
-                    <section>
-                        <h5>If your lender gave you a temporary break, could you keep your repayment schedule and catch
-                            up?
-                        </h5>
-                        <p>Then ask them to reduce or temporarily stop your re-payments for a short time. Alternatively
-                            it
-                            may
-                            be worth asking them to extend the term of your mortgage to reduce you payments ( though
-                            this
-                            will
-                            result in more interest being paid overall).</p>
-                    </section>
-                    <section>
-                        <h5>Are you in a shared-ownership scheme?</h5>
-                        <p>Look at selling back a portion of your ownership to the landlord to vary the terms of your
-                            flexible
-                            tenure.</p>
-                    </section>
-                    <section>
-                        <h5>Are you at your wit’s end because none of these options seem practical?</h5>
-                        <p>Then your nearest Citizens Advice Bureau can offer free help from a professional debt
-                            adviser.
-                            They
-                            could suggest your best course of action is to contact someone like us to arange financing
-                            to
-                            stop
-                            the repossession of your house.</p>
-                    </section>
-                    <section>
-                        <h5>Attempt to renegotiate your mortgage—write to your lender</h5>
-                        <ul>
-                            <li>Get the address and a name of the person or department handling your loan.</li>
-                            <li>Avoid using emotional language, be polite and formal.</li>
-                            <li>Summarise why you fell behind and how you can make up the payments.</li>
-                            <li>Offer to pay a little extra for a few months if you can afford it.</li>
-                        </ul>
+                        <h5 class="toph5">Repossessions, Evictions & N244 Applications.</h5>
+                        <p>If a historic court application has failed and an eviction order is made, contact us and take
+                            immediate advice on filing a new application to suspend the possession order.</p>
 
-                        <p>Describe how you will settle your debts including a statement about how your finances will
-                            improve
-                            due to some or all of the following:</p>
-                        <ul>
-                            <li>Increasing your income</li>
-                            <li>Receiving an insurance pay-out</li>
-                            <li>Seeking financial assistance from the government</li>
-                            <li>Taking out a loan.</li>
-                        </ul>
-                        <p>Mention anything good about your previous re-payment history and the equity built up in your
-                            home.
-                        </p>
-                    </section>
-                    <section>
-                        <h5>Free mortgage-rescue services you may qualify for</h5>
-                        <p>The UK’s Abhaile Scheme for mortgage arrears relief—see if you're eligible for free
-                            accountancy
-                            or
-                            legal advice.</p>
-                        <p>Contact Shelter or Civil Legal Advice to see if you can apply for other government benefits.
-                        </p>
-                    </section>
-                    <section>
-                        <h5>Has your lender filed a claim against you?</h5>
-                        <ul>
-                            <li>Gather evidence to demonstrate to the judge that you are sincere in your desire to be
-                                reasonable
-                                and take responsibility moving forward.</li>
-                            <li>Contact your county court and request information on free legal representationyou’re
-                                your
-                                hearing.</li>
-                            <li>Collect supporting information, such as letters you’ve written to the lender attempting
-                                to
-                                renegotiate your mortgage, as evidence you’ve been cooperating with your lender.</li>
-                            <li>Take all your financial documents, the defence form, and proof of any benefits claims
-                                you've
-                                made with you when you attend court. The judge is more likely to side with you—perhaps
-                                by
-                                giving
-                                you more time or a more reasonable repayment plan—if you go prepared.</li>
-                        </ul>
-                    </section>
-                    <section>
-                        <h5>If the court hearing fails and a repossession order is made</h5>
-                        <ul>
-                            <li>Take legal advice on filing a new order to suspend the possession order.</li>
-                            <li>Ask your lender to renegotiate the terms and repeal the repossession order.</li>
-                            <li>Consider a bridging loan to repay your mortgage arrears and stop repossession.</li>
-                        </ul>
-                    </section>
-                    <section>
                         <h5>Stopping repossession</h5>
                         <h6>YOU DON’T HAVE TO LOSE YOUR HOUSE</h6>
                         <p>Our Legal Team will prevent the repossession from going ahead. We can save you property and
@@ -747,89 +678,55 @@
                             financial problems. Our repossession experts have extensive experience in dealing with both
                             lenders
                             and the Courts.</p>
+
                     </section>
                     <section>
                         <h5>FREE LEGAL DEFENCE</h5>
                         <p>We can stop your repossession at any stage; our legal team will make an emergency application
-                            to
-                            HM
-                            Courts.</p>
+                            to HM Courts.</p>
                         <p>We will provide an expert defence and attend Court on your behalf to ensure the repossession
-                            is
-                            stopped. This in turn will enable us to find the most suitable options for you.</p>
+                            is stopped. This in turn will enable us to find the most suitable options for you.</p>
                         <p>Many thousands of people have faced the threat of repossession, but by contacting us we will
-                            stop
-                            the
-                            repossession, and save the equity in your home. Furthermore, you can <span
-                                class="bold red">stay
-                                back rent free.</span></p>
+                            stop the repossession, and save the equity in your home. Furthermore, you will benefit from
+                            a rent free period.</p>
                         <p>There are always options.</p>
-                        <p>Call, email or complete our online form and a member of our team will contact you right away.
-                        </p>
+                        <p>Call, email or complete online form and a member of our team will contact you right away.</p>
                     </section>
                     <section>
-                        <h5>We buy now</h5>
-                        <h6>We Can Stop Your House Repossession Cold by Offering a quick cash purchase.</h6>
-                        <p>Let Our Repossession Experts Help You</p>
-                        <p>If you are facing repossession or struggling to make your mortgage payments—the time to act
-                            is
-                            now.
-                            Get
-                            you house sold fast.</p>
-                        <p>We have been buying and selling property for over XX years. Research shows that on average we
-                            pay
-                            up
-                            to
-                            £25,000 more than our competition for properties in the right location and condition.</p>
-                        <p>If you want to sell your house fast- we can make you an offer Today.</p>
-                    </section>
-                    <section>
-                        <h5>Stop Repossession Within Days or even hours</h5>
-                        <p>By complete the form opposite you could agree a sale within hours. Maybe even TODAY.</p>
-                        <p>You could be days away from banking the cash.</p>
-                        <p>Depending on the speed at which you need to sell we can complete a sale in as little as a
-                            week.
-                            Our
-                            average time to complete is just 4-6 weeks.</p>
-                        <p>We can pay you cash. And because there’s no chain, once the sale is agreed, life can begin
-                            again.</p>
-                    </section>
-                    <section>
-                        <h5>Stop Your House Being Repossessed Right Now</h5>
-                        <p>We will buy property that’s in any condition and in any price range.</p>
-                        <p>As soon as you contact us we will check the price of property recently sold in your area and
-                            make you an immediate offer.</p>
-                        <p>Don’t forget you could make a chain-free 'cash' sale in as little as 7 days!</p>
-                        <p>Let us make an offer on your property NOW!</p>
-                    </section>
-                    <section>
-                        <h5>Do you need to submit an N244 form? Or negotiate with your lender? Call us now for help on
-                            <a href="#" class="red bold">0800 286 055</a>
-                        </h5>
+                        <h5>We will submit an emergency N244 application on your behalf.</h5>
                         <h6>The N244 Form (N244 Application Notice)</h6>
                         <p>The N244 form is used by the County Court for a range of different applications. We use the
                             N244 Form to apply for an Emergency Court Hearing. This gets your case in front of a Judge
-                            so they can decide on whether or not to Suspend your Eviction Notice.</p>
+                            so they can decide on whether or not to Suspend your Eviction Notice. The defence we will
+                            prepare is absolutely vital in achieving the result you need. However, the timing of the
+                            application is also crucial. Submitting too early or too late could have a devastating
+                            outcome.</p>
                         <h6>Submitting an N244 Application Form.</h6>
-                        <p>An N244 Application cannot delay or stop your eviction, but if used in the right manner will
-                            allow you an Emergency Court Hearing that with our help will stop your eviction.</p>
+                        <p>An N244 Application incorrectly completed cannot delay or stop your eviction, but if used in
+                            the right manner will allow you an Emergency Court Hearing that with our help will stop your
+                            eviction.</p>
                         <p>So it’s important to get things right. Our experience means that we can complete the N244
-                            Application to enable an Emergency Court Hearing that will stop your eviction order and save
-                            your house.</p>
+                            Application correctly to enable an Emergency Court Hearing that will stop your eviction
+                            order and save your house</p>
                     </section>
                     <section>
-                        <h5>We Want To Help</h5>
+                        <h5>We Want to Help</h5>
                         <p>No matter how hopeless you feel your situation is, we can help. We succeed in helping almost
                             everyone who seeks our help. But If we feel we are unable to help for any reason, we will
                             tell you up-front while still giving you any advice you might need.</p>
-                        <p>So don't hesitate to call us. We can save your house.</p>
-                        <h6>Acting Swiftly.</h6>
+                        <p>So don't hesitate to call us. We can save your house and buy you time to decide your options.
+                        </p>
+                    </section>
+                    <section>
+                        <h5>Acting Swiftly.</h5>
                         <p>Only if submitted to the court and completed correctly can an N244 application delay or stop
                             a repossession. And with the right legal assistance and representation in court, an
                             emergency hearing can prevent eviction. Our extensive experience with property law matters
-                            means that we have the expertise to apply to the court correctly, garner an emergency
+                            means that we have the expertise to apply to the court correctly, arrange an emergency
                             hearing, and stop the eviction order on your home.</p>
-                        <h6>The Process</h6>
+                    </section>
+                    <section>
+                        <h5>The Process</h5>
                         <p>Far from being straightforward, the N244 application needs to take account of many factors
                             before submission. Furthermore, it needs to be submitted in a timely fashion and it must be
                             done right.</p>
@@ -837,11 +734,11 @@
                             <li>You must have sufficient grounds to file the N244. Having “nowhere to go” is not
                                 sufficient. We will establish the grounds for you and complete your form once we have
                                 assessed your case.</li>
-                            <li>The content of the N244 application must be detailed, but kept succinct. Providing
-                                just enough information to get an Emergency Court Hearing. We will complete the N244
+                            <li>The content of the N244 application must be detailed but kept succinct. Providing just
+                                enough information to get an Emergency Court Hearing. We will complete the N244
                                 Application form for you to get you hearing assessed by a judge.</li>
-                            <li>You must have an appropriate defence. We will prepare the best defence possible for
-                                you before any contact with the courts is made.</li>
+                            <li>You must have an appropriate defence. We will prepare the best defence possible for you
+                                before any contact with the courts is made.</li>
                         </ul>
                     </section>
                     <section>
@@ -854,7 +751,7 @@
                             that position by calling us to get it right on the first time.</p>
                     </section>
                     <section>
-                        <h5>Stopping Repossession for Mortgage or Rent Arrears</h5>
+                        <h5>Stopping Repossession for Mortgage Arrears</h5>
                         <p>The threat of legal proceedings for repossession can be very distressing, regardless of if
                             you are a home-owner or a tenant. And whether proceeding were started by the mortgage lender
                             or by a public or private property owner, most find the paperwork, harassment and
@@ -866,27 +763,22 @@
                             behalf, inform the court of the necessary facts, and present your case persuasively.</p>
                         <p>The judge who hears your case will decide whether or not to suspend the eviction notice and
                             halt proceedings your lender has made.</p>
-                        <h6>Defending Your Home</h6>
+                    </section>
+                    <section>
+                        <h5>SHR Defending Your Home - Summary.</h5>
                         <p>As previously stated, the N244 online application is not straightforward. Some key steps to
                             follow:</p>
                         <ul>
-                            <li>Present the application correctly and in ample time.</li>
-                            <li>THIS SECTION IS JUST A REPEAT OF WHAT WAS PREVIOUSLY WRITTEN</li>
+                            <li>Present the application correctly and get the timing right.</li>
+                            <li>The emergency hearing is the last opportunity you will have to save your home without
+                                necessarily having to pay your mortgage arrears in full at that time.</li>
+                            <li>We will support you at this vital juncture to secure a positive outcome and prevent a
+                                possible eviction.</li>
+                            <li>Remember if a hearing goes against you, there is an appeals process. However, it is best
+                                avoided. Do not put yourself in this position by calling us to get it right the first
+                                time. If you have already lost your hearing and you are looking to appeal, then by all
+                                means get in touch because we are still able to stop your eviction.</li>
                         </ul>
-                    </section>
-                    <section>
-                        <h5>Helping to win the repossession hearing</h5>
-                        <p>The emergency hearing is the last opportunity you will have to save your home without
-                            necessarily having to pay your rent or mortgage arrears in full at that time. </p>
-                        <p>We will support you at this vital juncture to secure a positive outcome and prevent a
-                            possible eviction.</p>
-                        <p>Those who have a low-income or who are in receipt of benefits may be entitled to remission of
-                            fees—exemption from court fees.</p>
-                        <p>Should you not contact us, and the hearing go against you, there is an appeals process.
-                            However, it is best avoided as it is very difficult to overturn. Avoid putting yourself in
-                            that position by calling us to get it right the first time. However, if you have already
-                            lost your hearing and are looking to appeal, then by all means, please get in touch and we
-                            will be happy to advise you.</p>
                     </section>
                 </div>
             </div>
@@ -908,18 +800,15 @@
                         <h5>We Do Not Just Instruct Random Solicitors to Attend Court in the Hope They Can Stop Your
                             Eviction. </h5>
                         <p>This is an area of great significance and is extremely important to us at SHR. At this stage
-                            we
-                            prioritise providing you the best legal representation, knowing full well that the incorrect
-                            team of solicitors or lawyers who don’t have the experience required could quite possibly
-                            have
-                            devastating results at court and a high probability of you losing your property. At SHR we
-                            therefore take no chances and only instruct our trusted, experienced London based lawyers
-                            and
-                            barristers who have vast knowledge in this area of high-risk defence. You will receive
-                            representation from some of the most experienced and respected UK legal experts all at no
-                            cost
-                            to you. At SHR we do not gamble with solicitors who do not have a track record of success in
-                            this field. It is your property at stake, so trust us, as we are here to get results. </p>
+                            we prioritise providing you the best legal representation, knowing full well that the
+                            incorrect team of solicitors or lawyers who don’t have the experience required could quite
+                            possibly have devastating results at court and a high probability of you losing your
+                            property. At SHR we therefore take no chances and only instruct our trusted, experienced
+                            London based lawyers and barristers who have vast knowledge in this area of high-risk
+                            defence. You will receive representation from some of the most experienced and respected UK
+                            legal experts all at no cost to you. At SHR we do not gamble with solicitors who do not have
+                            a track record of success in this field. It is your property at stake, so trust us, as we
+                            are here to get results. </p>
                         <p>The N244 applications are prepared by our legal team, approved by the court and evictions are
                             cancelled. You do not have to lose your equity or property to the bank. </p>
                         <p>Simply call <a href="#" class="red bold">0800 286 055</a></p>
@@ -940,121 +829,10 @@
             <div class="panel">
                 <div class="panel-content">
                     <section>
-                        <h5 class="toph5">How to Stop A House Repossession Order </h5>
-                        <h6>How Can I Stop a Repossession Order?</h6>
-                        <p>
-                            Despite what you may have heard or read a repossession order can be stopped at any time
-                            before
-                            the
-                            eviction date.
-                        </p>
-                        <h6>The options to avoid repossession of your house:</h6>
-                        <ol>
-                            <li>Create a plan to settle your outstanding mortgage debt.</li>
-                            <li>Write to your lender to re-negotiate your mortgage.</li>
-                            <li>Apprise yourself of the free mortgage-rescue services you might qualify for.</li>
-                            <li>If a claim has already been filed a claim against you, then:
-                                <ul class="no-border">
-                                    <li>Prepare your evidence</li>
-                                    <li>Get legal representation for your repossession hearing.</li>
-                                </ul>
-                            </li>
-                        </ol>
-                    </section>
-                    <section>
-                        <h5>Is a cheaper mortgage available to you?</h5>
-                        <p>You may need to re-finance to settle what’s owed to your current lender, but by transferring
-                            your
-                            mortgage elsewhere you may have lower monthly payments.</p>
-                    </section>
-                    <section>
-                        <h5>If your lender gave you a temporary break, could you keep your repayment schedule and catch
-                            up?
-                        </h5>
-                        <p>Then ask them to reduce or temporarily stop your re-payments for a short time. Alternatively
-                            it
-                            may
-                            be worth asking them to extend the term of your mortgage to reduce you payments ( though
-                            this
-                            will
-                            result in more interest being paid overall).</p>
-                    </section>
-                    <section>
-                        <h5>Are you in a shared-ownership scheme?</h5>
-                        <p>Look at selling back a portion of your ownership to the landlord to vary the terms of your
-                            flexible
-                            tenure.</p>
-                    </section>
-                    <section>
-                        <h5>Are you at your wit’s end because none of these options seem practical?</h5>
-                        <p>Then your nearest Citizens Advice Bureau can offer free help from a professional debt
-                            adviser.
-                            They
-                            could suggest your best course of action is to contact someone like us to arange financing
-                            to
-                            stop
-                            the repossession of your house.</p>
-                    </section>
-                    <section>
-                        <h5>Attempt to renegotiate your mortgage—write to your lender</h5>
-                        <ul>
-                            <li>Get the address and a name of the person or department handling your loan.</li>
-                            <li>Avoid using emotional language, be polite and formal.</li>
-                            <li>Summarise why you fell behind and how you can make up the payments.</li>
-                            <li>Offer to pay a little extra for a few months if you can afford it.</li>
-                        </ul>
+                        <h5 class="toph5">Repossessions, Evictions & N244 Applications.</h5>
+                        <p>If a historic court application has failed and an eviction order is made, contact us and take
+                            immediate advice on filing a new application to suspend the possession order.</p>
 
-                        <p>Describe how you will settle your debts including a statement about how your finances will
-                            improve
-                            due to some or all of the following:</p>
-                        <ul>
-                            <li>Increasing your income</li>
-                            <li>Receiving an insurance pay-out</li>
-                            <li>Seeking financial assistance from the government</li>
-                            <li>Taking out a loan.</li>
-                        </ul>
-                        <p>Mention anything good about your previous re-payment history and the equity built up in your
-                            home.
-                        </p>
-                    </section>
-                    <section>
-                        <h5>Free mortgage-rescue services you may qualify for</h5>
-                        <p>The UK’s Abhaile Scheme for mortgage arrears relief—see if you're eligible for free
-                            accountancy
-                            or
-                            legal advice.</p>
-                        <p>Contact Shelter or Civil Legal Advice to see if you can apply for other government benefits.
-                        </p>
-                    </section>
-                    <section>
-                        <h5>Has your lender filed a claim against you?</h5>
-                        <ul>
-                            <li>Gather evidence to demonstrate to the judge that you are sincere in your desire to be
-                                reasonable
-                                and take responsibility moving forward.</li>
-                            <li>Contact your county court and request information on free legal representationyou’re
-                                your
-                                hearing.</li>
-                            <li>Collect supporting information, such as letters you’ve written to the lender attempting
-                                to
-                                renegotiate your mortgage, as evidence you’ve been cooperating with your lender.</li>
-                            <li>Take all your financial documents, the defence form, and proof of any benefits claims
-                                you've
-                                made with you when you attend court. The judge is more likely to side with you—perhaps
-                                by
-                                giving
-                                you more time or a more reasonable repayment plan—if you go prepared.</li>
-                        </ul>
-                    </section>
-                    <section>
-                        <h5>If the court hearing fails and a repossession order is made</h5>
-                        <ul>
-                            <li>Take legal advice on filing a new order to suspend the possession order.</li>
-                            <li>Ask your lender to renegotiate the terms and repeal the repossession order.</li>
-                            <li>Consider a bridging loan to repay your mortgage arrears and stop repossession.</li>
-                        </ul>
-                    </section>
-                    <section>
                         <h5>Stopping repossession</h5>
                         <h6>YOU DON’T HAVE TO LOSE YOUR HOUSE</h6>
                         <p>Our Legal Team will prevent the repossession from going ahead. We can save you property and
@@ -1074,89 +852,55 @@
                             financial problems. Our repossession experts have extensive experience in dealing with both
                             lenders
                             and the Courts.</p>
+
                     </section>
                     <section>
                         <h5>FREE LEGAL DEFENCE</h5>
                         <p>We can stop your repossession at any stage; our legal team will make an emergency application
-                            to
-                            HM
-                            Courts.</p>
+                            to HM Courts.</p>
                         <p>We will provide an expert defence and attend Court on your behalf to ensure the repossession
-                            is
-                            stopped. This in turn will enable us to find the most suitable options for you.</p>
+                            is stopped. This in turn will enable us to find the most suitable options for you.</p>
                         <p>Many thousands of people have faced the threat of repossession, but by contacting us we will
-                            stop
-                            the
-                            repossession, and save the equity in your home. Furthermore, you can <span
-                                class="bold red">stay
-                                back rent free.</span></p>
+                            stop the repossession, and save the equity in your home. Furthermore, you will benefit from
+                            a rent free period.</p>
                         <p>There are always options.</p>
-                        <p>Call, email or complete our online form and a member of our team will contact you right away.
-                        </p>
+                        <p>Call, email or complete online form and a member of our team will contact you right away.</p>
                     </section>
                     <section>
-                        <h5>We buy now</h5>
-                        <h6>We Can Stop Your House Repossession Cold by Offering a quick cash purchase.</h6>
-                        <p>Let Our Repossession Experts Help You</p>
-                        <p>If you are facing repossession or struggling to make your mortgage payments—the time to act
-                            is
-                            now.
-                            Get
-                            you house sold fast.</p>
-                        <p>We have been buying and selling property for over XX years. Research shows that on average we
-                            pay
-                            up
-                            to
-                            £25,000 more than our competition for properties in the right location and condition.</p>
-                        <p>If you want to sell your house fast- we can make you an offer Today.</p>
-                    </section>
-                    <section>
-                        <h5>Stop Repossession Within Days or even hours</h5>
-                        <p>By complete the form opposite you could agree a sale within hours. Maybe even TODAY.</p>
-                        <p>You could be days away from banking the cash.</p>
-                        <p>Depending on the speed at which you need to sell we can complete a sale in as little as a
-                            week.
-                            Our
-                            average time to complete is just 4-6 weeks.</p>
-                        <p>We can pay you cash. And because there’s no chain, once the sale is agreed, life can begin
-                            again.</p>
-                    </section>
-                    <section>
-                        <h5>Stop Your House Being Repossessed Right Now</h5>
-                        <p>We will buy property that’s in any condition and in any price range.</p>
-                        <p>As soon as you contact us we will check the price of property recently sold in your area and
-                            make you an immediate offer.</p>
-                        <p>Don’t forget you could make a chain-free 'cash' sale in as little as 7 days!</p>
-                        <p>Let us make an offer on your property NOW!</p>
-                    </section>
-                    <section>
-                        <h5>Do you need to submit an N244 form? Or negotiate with your lender? Call us now for help on
-                            <a href="#" class="red bold">0800 286 055</a>
-                        </h5>
+                        <h5>We will submit an emergency N244 application on your behalf.</h5>
                         <h6>The N244 Form (N244 Application Notice)</h6>
                         <p>The N244 form is used by the County Court for a range of different applications. We use the
                             N244 Form to apply for an Emergency Court Hearing. This gets your case in front of a Judge
-                            so they can decide on whether or not to Suspend your Eviction Notice.</p>
+                            so they can decide on whether or not to Suspend your Eviction Notice. The defence we will
+                            prepare is absolutely vital in achieving the result you need. However, the timing of the
+                            application is also crucial. Submitting too early or too late could have a devastating
+                            outcome.</p>
                         <h6>Submitting an N244 Application Form.</h6>
-                        <p>An N244 Application cannot delay or stop your eviction, but if used in the right manner will
-                            allow you an Emergency Court Hearing that with our help will stop your eviction.</p>
+                        <p>An N244 Application incorrectly completed cannot delay or stop your eviction, but if used in
+                            the right manner will allow you an Emergency Court Hearing that with our help will stop your
+                            eviction.</p>
                         <p>So it’s important to get things right. Our experience means that we can complete the N244
-                            Application to enable an Emergency Court Hearing that will stop your eviction order and save
-                            your house.</p>
+                            Application correctly to enable an Emergency Court Hearing that will stop your eviction
+                            order and save your house</p>
                     </section>
                     <section>
-                        <h5>We Want To Help</h5>
+                        <h5>We Want to Help</h5>
                         <p>No matter how hopeless you feel your situation is, we can help. We succeed in helping almost
                             everyone who seeks our help. But If we feel we are unable to help for any reason, we will
                             tell you up-front while still giving you any advice you might need.</p>
-                        <p>So don't hesitate to call us. We can save your house.</p>
-                        <h6>Acting Swiftly.</h6>
+                        <p>So don't hesitate to call us. We can save your house and buy you time to decide your options.
+                        </p>
+                    </section>
+                    <section>
+                        <h5>Acting Swiftly.</h5>
                         <p>Only if submitted to the court and completed correctly can an N244 application delay or stop
                             a repossession. And with the right legal assistance and representation in court, an
                             emergency hearing can prevent eviction. Our extensive experience with property law matters
-                            means that we have the expertise to apply to the court correctly, garner an emergency
+                            means that we have the expertise to apply to the court correctly, arrange an emergency
                             hearing, and stop the eviction order on your home.</p>
-                        <h6>The Process</h6>
+                    </section>
+                    <section>
+                        <h5>The Process</h5>
                         <p>Far from being straightforward, the N244 application needs to take account of many factors
                             before submission. Furthermore, it needs to be submitted in a timely fashion and it must be
                             done right.</p>
@@ -1164,11 +908,11 @@
                             <li>You must have sufficient grounds to file the N244. Having “nowhere to go” is not
                                 sufficient. We will establish the grounds for you and complete your form once we have
                                 assessed your case.</li>
-                            <li>The content of the N244 application must be detailed, but kept succinct. Providing
-                                just enough information to get an Emergency Court Hearing. We will complete the N244
+                            <li>The content of the N244 application must be detailed but kept succinct. Providing just
+                                enough information to get an Emergency Court Hearing. We will complete the N244
                                 Application form for you to get you hearing assessed by a judge.</li>
-                            <li>You must have an appropriate defence. We will prepare the best defence possible for
-                                you before any contact with the courts is made.</li>
+                            <li>You must have an appropriate defence. We will prepare the best defence possible for you
+                                before any contact with the courts is made.</li>
                         </ul>
                     </section>
                     <section>
@@ -1181,7 +925,7 @@
                             that position by calling us to get it right on the first time.</p>
                     </section>
                     <section>
-                        <h5>Stopping Repossession for Mortgage or Rent Arrears</h5>
+                        <h5>Stopping Repossession for Mortgage Arrears</h5>
                         <p>The threat of legal proceedings for repossession can be very distressing, regardless of if
                             you are a home-owner or a tenant. And whether proceeding were started by the mortgage lender
                             or by a public or private property owner, most find the paperwork, harassment and
@@ -1193,30 +937,24 @@
                             behalf, inform the court of the necessary facts, and present your case persuasively.</p>
                         <p>The judge who hears your case will decide whether or not to suspend the eviction notice and
                             halt proceedings your lender has made.</p>
-                        <h6>Defending Your Home</h6>
+                    </section>
+                    <section>
+                        <h5>SHR Defending Your Home - Summary.</h5>
                         <p>As previously stated, the N244 online application is not straightforward. Some key steps to
                             follow:</p>
                         <ul>
-                            <li>Present the application correctly and in ample time.</li>
-                            <li>THIS SECTION IS JUST A REPEAT OF WHAT WAS PREVIOUSLY WRITTEN</li>
+                            <li>Present the application correctly and get the timing right.</li>
+                            <li>The emergency hearing is the last opportunity you will have to save your home without
+                                necessarily having to pay your mortgage arrears in full at that time.</li>
+                            <li>We will support you at this vital juncture to secure a positive outcome and prevent a
+                                possible eviction.</li>
+                            <li>Remember if a hearing goes against you, there is an appeals process. However, it is best
+                                avoided. Do not put yourself in this position by calling us to get it right the first
+                                time. If you have already lost your hearing and you are looking to appeal, then by all
+                                means get in touch because we are still able to stop your eviction.</li>
                         </ul>
                     </section>
-                    <section>
-                        <h5>Helping to win the repossession hearing</h5>
-                        <p>The emergency hearing is the last opportunity you will have to save your home without
-                            necessarily having to pay your rent or mortgage arrears in full at that time. </p>
-                        <p>We will support you at this vital juncture to secure a positive outcome and prevent a
-                            possible eviction.</p>
-                        <p>Those who have a low-income or who are in receipt of benefits may be entitled to remission of
-                            fees—exemption from court fees.</p>
-                        <p>Should you not contact us, and the hearing go against you, there is an appeals process.
-                            However, it is best avoided as it is very difficult to overturn. Avoid putting yourself in
-                            that position by calling us to get it right the first time. However, if you have already
-                            lost your hearing and are looking to appeal, then by all means, please get in touch and we
-                            will be happy to advise you.</p>
-                    </section>
                 </div>
-            </div>
             </div>
         </li>
         <li class="accordion-item" id="highcounty">
@@ -1358,7 +1096,7 @@
                             LPA receivers. These firms are usually appointed by the banks, mortgage providers or bridge
                             finance companies, to move in, take control and legally sell a property in order to pay back
                             all debt or money owed by the homeowner to the lenders that have been secured by way of a
-                            legal charge. </p>
+                            legal charge.</p>
                         <p>Our specialist legal team have vast knowledge and years of experience in this complex area
                             and are more than willing to help owners who are facing imminent bankruptcy, still in a
                             bankruptcy or even just out of a bankruptcy term. We are here to help clients who are in
@@ -1498,50 +1236,14 @@
                         <h5>Simple, Straight-Forward Process. </h5>
                         <p>Here at SHR we will keep the process very straight forward and simple. From the moment you
                             instruct us, we will immediately take control in order to eliminate your stress, pressures
-                            and concerns that you may have in regards to losing your property</p>
+                            and concerns that you may have in regards to losing your property. </p>
                         <p>We will firstly focus on halting any legal or court action against you, therefore stopping a
                             possible repossession or eviction going ahead, with a watertight N244 application through
                             our emergency legal defence team. Once this has been achieved and your repossession or
                             eviction has been stopped, we will advise you on several options and put in place a solution
                             that best suits you and relieve you of your fears and financial pressures. </p>
                     </section>
-                    <section>
-                        <p>We fully appreciate the panic and distress when a homeowner receives a repossession order, or
-                            even worse a court eviction notice through the post. This can be a very unpleasant and
-                            unsettling time. We understand why many homeowners feel the need to act quickly by
-                            contacting
-                            fast house buyers, selling quickly and cheap. Here at SHR we operate differently, we can
-                            guarantee and give you the assurance you so need, that it isn’t necessary to go down the
-                            fast
-                            sale route.
-                        </p>
-                        <p>We can help you with far better options that will benefit you now, and in the future, leaving
-                            you
-                            better off financially. Why give your equity away when there is absolutely no need? </p>
-                        <p>All you need to do is call us free on: <a href="#" class="red bold">0800 286 055</a> for a
-                            free confidential chat, help and correct
-                            advice.</p>
-                    </section>
-                    <section>
-                        <p>At this moment in time, it may seem you have no other option and it’s inevitable that your
-                            bank
-                            or mortgage provider will take possession of your property, forcing you to consider selling
-                            your
-                            house cheaply to cash house buyer. At SHR we can offer alternative, better options and
-                            solutions. If you are at this stage of enforcement; <span class="red bold">Do Not Ignore
-                                Demands or Court Notices</span>. You
-                            need to take swift action immediately by contacting us, so we can instruct our experienced
-                            legal
-                            team to stop and avoid your property from being repossessed. Our legal team can still help
-                            any
-                            court action against you, even if you have been to court with an N244 application on
-                            previous
-                            occasions regarding an eviction relating to the same property. This will then allow time for
-                            us
-                            to go through all of your options and select a package that is best suited for you and get
-                            you
-                            back on the road to recovery without losing your property. </p>
-                    </section>
+
                 </div>
             </div>
         </li>
@@ -1558,25 +1260,12 @@
             <div class="panel">
                 <div class="panel-content">
                     <section>
-                        <h5>Simple, Straight-Forward Process. </h5>
-                        <p>Here at SHR we will keep the process very straight forward and simple. From the moment you
-                            instruct us, we will immediately take control in order to eliminate your stress, pressures
-                            and concerns that you may have in regards to losing your property</p>
-                        <p>We will firstly focus on halting any legal or court action against you, therefore stopping a
-                            possible repossession or eviction going ahead, with a watertight N244 application through
-                            our emergency legal defence team. Once this has been achieved and your repossession or
-                            eviction has been stopped, we will advise you on several options and put in place a solution
-                            that best suits you and relieve you of your fears and financial pressures. </p>
-                    </section>
-                    <section>
                         <p>We fully appreciate the panic and distress when a homeowner receives a repossession order, or
                             even worse a court eviction notice through the post. This can be a very unpleasant and
                             unsettling time. We understand why many homeowners feel the need to act quickly by
-                            contacting
-                            fast house buyers, selling quickly and cheap. Here at SHR we operate differently, we can
-                            guarantee and give you the assurance you so need, that it isn’t necessary to go down the
-                            fast
-                            sale route.
+                            contacting fast house buyers, selling quickly and cheap. Here at SHR we operate differently,
+                            we can guarantee and give you the assurance you so need, that it isn’t necessary to go down
+                            the fast sale route.
                         </p>
                         <p>We can help you with far better options that will benefit you now, and in the future, leaving
                             you
@@ -1585,28 +1274,7 @@
                             free confidential chat, help and correct
                             advice.</p>
                     </section>
-                    <section>
-                        <p>At this moment in time, it may seem you have no other option and it’s inevitable that your
-                            bank
-                            or mortgage provider will take possession of your property, forcing you to consider selling
-                            your
-                            house cheaply to cash house buyer. At SHR we can offer alternative, better options and
-                            solutions. If you are at this stage of enforcement; <span class="red bold">Do Not Ignore
-                                Demands or Court Notices</span>. You
-                            need to take swift action immediately by contacting us, so we can instruct our experienced
-                            legal
-                            team to stop and avoid your property from being repossessed. Our legal team can still help
-                            any
-                            court action against you, even if you have been to court with an N244 application on
-                            previous
-                            occasions regarding an eviction relating to the same property. This will then allow time for
-                            us
-                            to go through all of your options and select a package that is best suited for you and get
-                            you
-                            back on the road to recovery without losing your property. </p>
-                    </section>
                 </div>
-
             </div>
         </li>
         <li class="accordion-item">
@@ -1621,34 +1289,6 @@
 
             <div class="panel">
                 <div class="panel-content">
-                    <section>
-                        <h5>Simple, Straight-Forward Process. </h5>
-                        <p>Here at SHR we will keep the process very straight forward and simple. From the moment you
-                            instruct us, we will immediately take control in order to eliminate your stress, pressures
-                            and concerns that you may have in regards to losing your property</p>
-                        <p>We will firstly focus on halting any legal or court action against you, therefore stopping a
-                            possible repossession or eviction going ahead, with a watertight N244 application through
-                            our emergency legal defence team. Once this has been achieved and your repossession or
-                            eviction has been stopped, we will advise you on several options and put in place a solution
-                            that best suits you and relieve you of your fears and financial pressures. </p>
-                    </section>
-                    <section>
-                        <p>We fully appreciate the panic and distress when a homeowner receives a repossession order, or
-                            even worse a court eviction notice through the post. This can be a very unpleasant and
-                            unsettling time. We understand why many homeowners feel the need to act quickly by
-                            contacting
-                            fast house buyers, selling quickly and cheap. Here at SHR we operate differently, we can
-                            guarantee and give you the assurance you so need, that it isn’t necessary to go down the
-                            fast
-                            sale route.
-                        </p>
-                        <p>We can help you with far better options that will benefit you now, and in the future, leaving
-                            you
-                            better off financially. Why give your equity away when there is absolutely no need? </p>
-                        <p>All you need to do is call us free on: <a href="#" class="red bold">0800 286 055</a> for a
-                            free confidential chat, help and correct
-                            advice.</p>
-                    </section>
                     <section>
                         <p>At this moment in time, it may seem you have no other option and it’s inevitable that your
                             bank
@@ -1691,6 +1331,92 @@
             </div>
         </li>
     </ul>
+
+
+    <!-- ------------------- 4 Boxes ------------------------- -->
+    <!-- ------------------- 4 Boxes ------------------------- -->
+    <!-- ------------------- 4 Boxes ------------------------- -->
+
+
+    <h2></h2>
+    <div class="boxes">
+        <div class="box-wrap">
+            <div class="box">
+                <div class="box-number">
+                    <h3>1</h3>
+                </div>
+                <div class="box-title">
+                    <h6>WE WILL STOP YOUR REPOSSESSION & EVICTION</h6>
+                </div>
+                <div class="box-script">
+                    <p>We will assess your situation, establish and understand your circumstances. SHR will immediately
+                        take action and instruct our legal team to represent you free of charge both at court and liaise
+                        with your bank or mortgage provider.</p>
+                </div>
+            </div>
+            <div class="100-guaranteed">
+                <h6 class="100">100%</h6>
+                <h6 class="guaranteed">Guaranteed</h6>
+            </div>
+        </div>
+        <div class="box-wrap">
+            <div class="box">
+                <div class="box-number">
+                    <h3>2</h3>
+                </div>
+                <div class="box-title">
+                    <h6>YOU DON’T HAVE TO SELL YOUR PROPERTY CHEAP OR FAST</h6>
+                </div>
+                <div class="box-script">
+                    <p>You may think you have no choice and time has run out. That is definitely not the case if you
+                        instruct SHR. We can stop all court action against you, buy you time TO ASSESS YOUR OPTIONS AND
+                        maximise your equity. </p>
+                </div>
+            </div>
+            <div class="100-guaranteed">
+                <h6 class="100">100%</h6>
+                <h6 class="guaranteed">Guaranteed</h6>
+            </div>
+        </div>
+        <div class="box-wrap">
+            <div class="box">
+                <div class="box-number">
+                    <h3>3</h3>
+                </div>
+                <div class="box-title">
+                    <h6>UP TO 6 MONTHS NO RENT NO MORTGAGE PAYMENTS</h6>
+                </div>
+                <div class="box-script">
+                    <p>Yes you won’t have to worry about paying rent or monthly mortgage payments. Our options will
+                        allow you ample time to choose and put in place one of our long term solutions, best suited to
+                        you. </p>
+                </div>
+            </div>
+            <div class="100-guaranteed">
+                <h6 class="100">100%</h6>
+                <h6 class="guaranteed">Guaranteed</h6>
+            </div>
+        </div>
+        <div class="box-wrap">
+            <div class="box">
+                <div class="box-number">
+                    <h3>4</h3>
+                </div>
+                <div class="box-title">
+                    <h6>PAY OFF ALL YOUR SECURED DEBTS</h6>
+                </div>
+                <div class="box-script">
+                    <p>This is the final stage where our legal team will complete ALL NECESSARY PAPERWORK and pay off
+                        all your secured outstanding creditors. ALL COURT AND LEGAL ACTION AGAINST YOU, Enabling you to
+                        get back on track. </p>
+                </div>
+            </div>
+            <div class="100-guaranteed">
+                <h6 class="100">100%</h6>
+                <h6 class="guaranteed">Guaranteed</h6>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
