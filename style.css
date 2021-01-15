@@ -171,7 +171,7 @@ a:visited {
 .header {
   clear: both;
   width: 100%;
-  background-image: url(assets/red-overlay.png), url(assets/judge-banner.jpg);
+  background-image: url(assets/red-overlay.png), url(assets/judge-banner-crest.jpg);
   background-repeat: no-repeat, no-repeat;
   background-position: top;
   background-size: 100% 101%, 101% auto;
