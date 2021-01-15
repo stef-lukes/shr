@@ -9,7 +9,7 @@
     <title>Stop House Repossessions</title>
     <link rel="stylesheet" href="style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>
+    <!-- <script>
         $(document).ready(function () {
             // Add smooth scrolling to all links
             $("a").on('click', function (event) {
@@ -26,7 +26,7 @@
                     // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
                     $('html, body').animate({
                         scrollTop: $(hash).offset().top
-                    }, 800, function () {
+                    }, 600, function () {
 
                         // Add hash (#) to URL when done scrolling (default click behavior)
                         window.location.hash = hash;
@@ -34,7 +34,7 @@
                 } // End if
             });
         });
-    </script>
+    </script> -->
     <script>
         $(document).on('click', 'input[type="checkbox"][data-group]', function (event) {
             // The checkbox that was clicked
@@ -51,7 +51,6 @@
             otherCheckboxes.prop('checked', checked);
         });
     </script>
-
     <script>
         function rotateImage() {
             var element = document.getElementById("caret1");
@@ -605,8 +604,8 @@
     <h2 class="accordion-header">SHR SERVICES - FOR MORE INFORMATION <span class="red">CLICK</span> BELOW</h2>
     <ul class="accordion-wrapper">
         <li class="accordion-item" id="homepage">
-            <input type="checkbox" class="checkbox" id="tab-oneA" />
-            <label for="tab-oneA" onclick="rotateImage1();">
+            <input type="checkbox" class="checkbox" id="tabOneA" autocomplete="off" />
+            <label for="tabOneA" onclick="rotateImage1();">
                 <div class="label-icon">
                     <div class="dot"></div>
                 </div>
@@ -638,13 +637,19 @@
                             you is halted and a solution that suits you is found.</p>
                         <p>At SHR we will immediately relieve you from financial pressures should you make the right
                             choice and instruct us.</p>
+
+                        <input type="checkbox" class="checkbox" id="tabOneA" />
+                        <label class="close-tab" for="tabOneA">
+                            <a href="#homepage" onclick="tabOneA.click();rotateImage1();">Close Tab<span>X</span></a>
+                        </label>
                     </section>
+
                 </div>
             </div>
         </li>
         <li class="accordion-item" id="evictions">
-            <input type="checkbox" class="checkbox" id="tab-one" data-group="group2" />
-            <label for="tab-one" onclick="rotateImage();">
+            <input type="checkbox" class="checkbox" id="tabOne" data-group="group2" autocomplete="off" />
+            <label for="tabOne" onclick="rotateImage();">
                 <div class="label-icon">
                     <div class="dot"></div>
                 </div>
@@ -779,14 +784,18 @@
                                 time. If you have already lost your hearing and you are looking to appeal, then by all
                                 means get in touch because we are still able to stop your eviction.</li>
                         </ul>
+                        <input type="checkbox" class="checkbox" id="tabOne" />
+                        <label class="close-tab" for="tabOne">
+                            <a href=" #evictions" onclick="tabOne.click();rotateImage();">Close Tab<span>X</span></a>
+                        </label>
                     </section>
                 </div>
             </div>
         </li>
 
         <li class="accordion-item" id="free">
-            <input type="checkbox" class="checkbox" id="tab-two" data-group="group4" />
-            <label for="tab-two" onclick="rotateImage2();">
+            <input type="checkbox" class="checkbox" id="tabTwo" data-group="group4" />
+            <label for="tabTwo" onclick="rotateImage2();">
                 <div class="label-icon">
                     <div class="dot"></div>
                 </div>
@@ -812,13 +821,17 @@
                         <p>The N244 applications are prepared by our legal team, approved by the court and evictions are
                             cancelled. You do not have to lose your equity or property to the bank. </p>
                         <p>Simply call <a href="#" class="red bold">0800 286 055</a></p>
+                        <input type="checkbox" class="checkbox" id="tabTwo" />
+                        <label class="close-tab" for="tabTwo">
+                            <a href=" #free" onclick="tabTwo.click();rotateImage2();">Close Tab<span>X</span></a>
+                        </label>
                     </section>
                 </div>
             </div>
         </li>
         <li class="accordion-item" id="n244">
-            <input type="checkbox" class="checkbox" id="tab-three" data-group="group3" />
-            <label for="tab-three" onclick="rotateImage3();">
+            <input type="checkbox" class="checkbox" id="tabThree" data-group="group3" />
+            <label for="tabThree" onclick="rotateImage3();">
                 <div class="label-icon">
                     <div class="dot"></div>
                 </div>
@@ -953,13 +966,17 @@
                                 time. If you have already lost your hearing and you are looking to appeal, then by all
                                 means get in touch because we are still able to stop your eviction.</li>
                         </ul>
+                        <input type="checkbox" class="checkbox" id="tabThree" />
+                        <label class="close-tab" for="tabThree">
+                            <a href=" #n244" onclick="tabThree.click();rotateImage3();">Close Tab<span>X</span></a>
+                        </label>
                     </section>
                 </div>
             </div>
         </li>
         <li class="accordion-item" id="highcounty">
-            <input type="checkbox" class="checkbox" id="tab-four" data-group="group5" />
-            <label for="tab-four" onclick="rotateImage4();">
+            <input type="checkbox" class="checkbox" id="tabFour" data-group="group5" />
+            <label for="tabFour" onclick="rotateImage4();">
                 <div class="label-icon">
                     <div class="dot"></div>
                 </div>
@@ -1074,13 +1091,18 @@
                             property and execute the warrant for possession.</p>
                         <p>This is an area where we excel and are able to help if you act quickly. Call <a href="#"
                                 class="red bold">0800 286 055</a></p>
+                        <input type="checkbox" class="checkbox" id="tabFour" />
+                        <label class="close-tab" for="tabFour">
+                            <a href=" #highcounty" onclick="tabFour.click();rotateImage4();">Close
+                                Tab<span>X</span></a>
+                        </label>
                     </section>
                 </div>
             </div>
         </li>
         <li class="accordion-item" id="tbr">
-            <input type="checkbox" class="checkbox" id="tab-five" data-group="group6" />
-            <label for="tab-five" onclick="rotateImage5();">
+            <input type="checkbox" class="checkbox" id="tabFive" data-group="group6" />
+            <label for="tabFive" onclick="rotateImage5();">
                 <div class="label-icon">
                     <div class="dot"></div>
                 </div>
@@ -1105,13 +1127,17 @@
                             instructing receivers in the first place. Situations such as these always escalate when
                             homeowners delay and don’t act quickly. </p>
                         <p>We are simply one call away <a href="#" class="red bold">0800 286 055</a></p>
+                        <input type="checkbox" class="checkbox" id="tabFive" />
+                        <label class="close-tab" for="tabFive">
+                            <a href=" #tbr" onclick="tabFive.click();rotateImage5();">Close Tab<span>X</span></a>
+                        </label>
                     </section>
                 </div>
             </div>
         </li>
-        <li class="accordion-item">
-            <input type="checkbox" class="checkbox" id="tab-six" />
-            <label for="tab-six" onclick="rotateImage6();">
+        <li class="accordion-item" id="rent-free">
+            <input type="checkbox" class="checkbox" id="tabSix" />
+            <label for="tabSix" onclick="rotateImage6();">
                 <div class="label-icon">
                     <div class="dot"></div>
                 </div>
@@ -1132,13 +1158,18 @@
                         <p>Please don’t delay, if you receive a repossession order or court eviction notice in the post,
                             call us immediately for a free confidential, no obligation chat <a href="#"
                                 class="red bold">0800 286 055</a></p>
+                        <input type="checkbox" class="checkbox" id="tabSix" />
+                        <label class="close-tab" for="tabSix">
+                            <a href=" #rent-free" onclick="tabSix.click();rotateImage6();">Close
+                                Tab<span>X</span></a>
+                        </label>
                     </section>
                 </div>
             </div>
         </li>
         <li class="accordion-item" id="whychoose">
-            <input type="checkbox" class="checkbox" name="tab-seven" id="tab-seven" data-group="group1" />
-            <label for="tab-seven" onclick="rotateImage7();">
+            <input type="checkbox" class="checkbox" name="tabSeven" id="tabSeven" data-group="group1" />
+            <label for="tabSeven" onclick="rotateImage7();">
                 <div class="label-icon">
                     <div class="dot"></div>
                 </div>
@@ -1175,13 +1206,18 @@
                         <p>Once we have assessed your circumstances and requirements, we will work closely with you to
                             achieve the best resolution, quickly. </p>
                         <p>Call <a href="#" class="red bold">0800 286 055</a> </p>
+                        <input type="checkbox" class="checkbox" id="tabSeven" />
+                        <label class="close-tab" for="tabSeven">
+                            <a href=" #whychoose" onclick="tabSeven.click();rotateImage7();">Close
+                                Tab<span>X</span></a>
+                        </label>
+                    </section>
                 </div>
-                </section>
             </div>
         </li>
-        <li class="accordion-item">
-            <input type="checkbox" class="checkbox" id="tab-eight" />
-            <label for="tab-eight" onclick="rotateImage8();">
+        <li class="accordion-item" id="team">
+            <input type="checkbox" class="checkbox" id="tabEight" />
+            <label for="tabEight" onclick="rotateImage8();">
                 <div class="label-icon">
                     <div class="dot"></div>
                 </div>
@@ -1216,13 +1252,18 @@
                             successfully, including legal final demands, repossession orders and court eviction notices
                             that you may be faced with at short notice. </p>
                         <p>We are simply one call away <a href="#" class="red bold">0800 286 055</a></p>
+                        <input type="checkbox" class="checkbox" id="tabEight" />
+                        <label class="close-tab" for="tabEight">
+                            <a href=" #team" onclick="tabEight.click();rotateImage8();">Close
+                                Tab<span>X</span></a>
+                        </label>
                     </section>
                 </div>
             </div>
         </li>
-        <li class="accordion-item">
-            <input type="checkbox" class="checkbox" id="tab-nine" />
-            <label for="tab-nine" onclick="rotateImage9();">
+        <li class="accordion-item" id="simple">
+            <input type="checkbox" class="checkbox" id="tabNine" />
+            <label for="tabNine" onclick="rotateImage9();">
                 <div class="label-icon">
                     <div class="dot"></div>
                 </div>
@@ -1242,14 +1283,19 @@
                             our emergency legal defence team. Once this has been achieved and your repossession or
                             eviction has been stopped, we will advise you on several options and put in place a solution
                             that best suits you and relieve you of your fears and financial pressures. </p>
+                        <input type="checkbox" class="checkbox" id="tabNine" />
+                        <label class="close-tab" for="tabNine">
+                            <a href=" #simple" onclick="tabNine.click();rotateImage9();">Close
+                                Tab<span>X</span></a>
+                        </label>
                     </section>
 
                 </div>
             </div>
         </li>
-        <li class="accordion-item">
-            <input type="checkbox" class="checkbox" id="tab-ten" />
-            <label for="tab-ten" onclick="rotateImage10();">
+        <li class="accordion-item" id="equity">
+            <input type="checkbox" class="checkbox" id="tabTen" />
+            <label for="tabTen" onclick="rotateImage10();">
                 <div class="label-icon">
                     <div class="dot"></div>
                 </div>
@@ -1273,13 +1319,18 @@
                         <p>All you need to do is call us free on: <a href="#" class="red bold">0800 286 055</a> for a
                             free confidential chat, help and correct
                             advice.</p>
+                        <input type="checkbox" class="checkbox" id="tabTen" />
+                        <label class="close-tab" for="tabTen">
+                            <a href=" #equity" onclick="tabTen.click();rotateImage10();">Close
+                                Tab<span>X</span></a>
+                        </label>
                     </section>
                 </div>
             </div>
         </li>
-        <li class="accordion-item">
-            <input type="checkbox" class="checkbox" id="tab-eleven" />
-            <label for="tab-eleven" onclick="rotateImage11();">
+        <li class="accordion-item" id="lose">
+            <input type="checkbox" class="checkbox" id="tabEleven" />
+            <label for="tabEleven" onclick="rotateImage11();">
                 <div class="label-icon">
                     <div class="dot"></div>
                 </div>
@@ -1308,13 +1359,18 @@
                             to go through all of your options and select a package that is best suited for you and get
                             you
                             back on the road to recovery without losing your property. </p>
+                        <input type="checkbox" class="checkbox" id="tabEleven" />
+                        <label class="close-tab" for="tabEleven">
+                            <a href=" #lose" onclick="tabEleven.click();rotateImage11();">Close
+                                Tab<span>X</span></a>
+                        </label>
                     </section>
                 </div>
             </div>
         </li>
-        <li class="accordion-item">
-            <input type="checkbox" class="checkbox" id="tab-twelve" />
-            <label for="tab-twelve" onclick="rotateImage12();">
+        <li class="accordion-item" id="notice">
+            <input type="checkbox" class="checkbox" id="tabTwelve" />
+            <label for="tabTwelve" onclick="rotateImage12();">
                 <div class="label-icon">
                     <div class="dot"></div>
                 </div>
@@ -1326,6 +1382,11 @@
                 <div class="panel-content">
                     <section>
                         <img src="assets/n54.jpg" alt="" id="n54">
+                        <input type="checkbox" class="checkbox" id="tabTwelve" />
+                        <label class="close-tab" for="tabTwelve">
+                            <a href=" #notice" onclick="tabTwelve.click();rotateImage12();">Close
+                                Tab<span>X</span></a>
+                        </label>
                     </section>
                 </div>
             </div>
@@ -1417,6 +1478,17 @@
             </div>
         </div>
     </div>
+
+
+    <!-- ------------------- Office Lady Banner ------------------------- -->
+    <!-- ------------------- Office Lady Banner ------------------------- -->
+    <!-- ------------------- Office Lady Banner ------------------------- -->
+
+    <div class="office-lady">
+        <h3>We will asess your situation, advise you on your options and give you straight forward pragmatic advice.
+        </h3>
+    </div>
+
 </body>
 
 </html>
