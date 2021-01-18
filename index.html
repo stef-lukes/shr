@@ -52,12 +52,8 @@
         });
     </script>
     <script>
-        function rotateImage() {
-            var element = document.getElementById("caret1");
-            element.classList.toggle("rotate");
-        }
         function rotateImage1() {
-            var element = document.getElementById("caret1A");
+            var element = document.getElementById("caret1");
             element.classList.toggle("rotate");
         }
         function rotateImage2() {
@@ -102,6 +98,10 @@
         }
         function rotateImage12() {
             var element = document.getElementById("caret12");
+            element.classList.toggle("rotate");
+        }
+        function rotateImage13() {
+            var element = document.getElementById("caret13");
             element.classList.toggle("rotate");
         }
     </script>
@@ -166,42 +166,69 @@
             <div class="menu-item">
                 <label for="menuOne">
                     <input class="checkbox" type="checkbox" name="menuOne" id="menuOne" data-group="group1" />
-                    <a href="#whychoose" onclick="menuOne.click();rotateImage7();">Why<br>Choose Us?</a>
+                    <a href="#what" onclick="menuOne.click();rotateImage1();">What<br>We Do</a>
                 </label>
+            </div>
+            <div class="divider" style="color: red;">
+                <p>|</p>
             </div>
             <div class="menu-item">
                 <label for="menuTwo">
                     <input class="checkbox" type="checkbox" name="menuTwo" id="menuTwo" data-group="group2" />
-                    <a href="#evictions" onclick="menuTwo.click();rotateImage();">Repossessions<br>Evictions</a>
+                    <a href="#whychoose" onclick="menuTwo.click();rotateImage2();">Why<br>Choose Us?</a>
                 </label>
+            </div>
+            <div class="divider" style="color: red;">
+                <p>|</p>
             </div>
             <div class="menu-item">
                 <label for="menuThree">
                     <input class="checkbox" type="checkbox" name="menuThree" id="menuThree" data-group="group3" />
-                    <a href="#n244" onclick="menuThree.click();rotateImage3();">N244 Court<br>Applications</a>
+                    <a href="#evictions" onclick="menuThree.click();rotateImage3();">Repossessions<br>Evictions</a>
                 </label>
+            </div>
+            <div class="divider" style="color: red;">
+                <p>|</p>
             </div>
             <div class="menu-item">
                 <label for="menuFour">
                     <input class="checkbox" type="checkbox" name="menuFour" id="menuFour" data-group="group4" />
-                    <a href="#free" onclick="menuFour.click();rotateImage2();">Free Legal<br>Representation</a>
+                    <a href="#n244" onclick="menuFour.click();rotateImage4();">N244 Court<br>Applications</a>
                 </label>
+            </div>
+            <div class="divider" style="color: red;">
+                <p>|</p>
             </div>
             <div class="menu-item">
                 <label for="menuFive">
                     <input class="checkbox" type="checkbox" name="menuFive" id="menuFive" data-group="group5" />
-                    <a href="#highcounty" onclick="menuFive.click();rotateImage4();">High Court<br>County Court</a>
+                    <a href="#free" onclick="menuFive.click();rotateImage5();">Free Legal<br>Representation</a>
                 </label>
+            </div>
+            <div class="divider" style="color: red;">
+                <p>|</p>
             </div>
             <div class="menu-item">
                 <label for="menuSix">
                     <input class="checkbox" type="checkbox" name="menuSix" id="menuSix" data-group="group6" />
-                    <a href="#tbr" onclick="menuSix.click();rotateImage5();">Trustees,<br>Bankruptcy, Receivers</a>
+                    <a href="#highcounty" onclick="menuSix.click();rotateImage6();">High Court<br>County Court</a>
                 </label>
             </div>
-            <div class="menu-item" id="last-item">
+            <div class="divider" style="color: red;">
+                <p>|</p>
+            </div>
+            <div class="menu-item">
                 <label for="menuSeven">
-                    <input class="checkbox" type="checkbox" name="menuSeven" id="menuSeven" />
+                    <input class="checkbox" type="checkbox" name="menuSeven" id="menuSeven" data-group="group7" />
+                    <a href="#tbr" onclick="menuSeven.click();rotateImage7();">Trustees,<br>Bankruptcy, Receivers</a>
+                </label>
+            </div>
+            <div class="divider" style="color: red;">
+                <p>|</p>
+            </div>
+            <div class="menu-item" id="last-item">
+                <label for="menuEight">
+                    <input class="checkbox" type="checkbox" name="menuEight" id="menuEight" />
                     <a href="#">Contact Us</a>
                 </label>
             </div>
@@ -255,8 +282,9 @@
 
     <div class="sub-header">
         <h1>Free Legal Representation</h1>
-        <p>You don’t have to lose your property to the bank, you don’t have to sell cheap and lose your equity. Our team
-            of lawyers and property experts who have over 35 years of experience and knowledge in stopping repossessions
+        <h3>You don’t have to lose your property to the bank, you don’t have to sell cheap and lose your equity.</h3>
+        <p>Our team of lawyers and property experts who have over 35 years of experience and knowledge in stopping
+            repossessions
             and evictions will not let you down.</p>
         <p>We will stop all action against you, stop your repossession or eviction at court with a guaranteed,
             water-tight defence.</p>
@@ -301,7 +329,7 @@
                     </div>
                     <div class="arrow"></div>
                     <div class="blurb">
-                        <h6>Help and Advice</h6>
+                        <h6 class="caps">Help and Advice</h6>
                         <h6>Professional expert guidance</h6>
                     </div>
                     <div class="no-charge">
@@ -314,7 +342,7 @@
                     </div>
                     <div class="arrow"></div>
                     <div class="blurb">
-                        <h6>Legal Court Representation</h6>
+                        <h6 class="caps">Legal Court Representation</h6>
                         <h6>Experienced specialist solicitors</h6>
                     </div>
                     <div class="no-charge">
@@ -327,7 +355,7 @@
                     </div>
                     <div class="arrow"></div>
                     <div class="blurb">
-                        <h6>N244 Applications</h6>
+                        <h6 class="caps">N244 Applications</h6>
                         <h6>Fully submitted and court approved</h6>
                     </div>
                     <div class="no-charge">
@@ -340,8 +368,8 @@
                     </div>
                     <div class="arrow"></div>
                     <div class="blurb">
-                        <h6>No Obligation Consultation</h6>
-                        <h6>Lean On Our Experience</h6>
+                        <h6 class="caps">No Obligation Consultation</h6>
+                        <h6>Lean on our experience</h6>
                     </div>
                     <div class="no-charge">
                         <h6>NO CHARGE</h6>
@@ -353,7 +381,7 @@
                     </div>
                     <div class="arrow"></div>
                     <div class="blurb">
-                        <h6>Barrister Representation</h6>
+                        <h6 class="caps">Barrister Representation</h6>
                         <h6>If required for High court</h6>
                     </div>
                     <div class="no-charge">
@@ -366,8 +394,8 @@
                     </div>
                     <div class="arrow"></div>
                     <div class="blurb">
-                        <h6>Form Processing</h6>
-                        <h6>We handle and complete documentation</h6>
+                        <h6 class="caps">Form Processing</h6>
+                        <h6>We handle and complete ALL documentation</h6>
                     </div>
                     <div class="no-charge">
                         <h6>NO CHARGE</h6>
@@ -379,8 +407,8 @@
                     </div>
                     <div class="arrow"></div>
                     <div class="blurb">
-                        <h6>Free Mortgage Period</h6>
-                        <h6>Mortgage free period arranged</h6>
+                        <h6 class="caps">Free Mortgage Period</h6>
+                        <h6>Rent Free Mortgage free period arranged</h6>
                     </div>
                     <div class="no-charge">
                         <h6>NO CHARGE</h6>
@@ -392,7 +420,7 @@
                     </div>
                     <div class="arrow"></div>
                     <div class="blurb">
-                        <h6>Communication With Your Bank</h6>
+                        <h6 class="caps">Communication With Your Bank</h6>
                         <h6>We will liaise with your bank and mortgage provider</h6>
                     </div>
                     <div class="no-charge">
@@ -453,7 +481,7 @@
                     </div>
                     <div class="we-can-flex">
                         <img src="assets/check.svg" alt="">
-                        <h6><span>We Can</span> offer you a mortgage free period</h6>
+                        <h6><span>We Can</span> offer you a mortgage & rent free period</h6>
                     </div>
                     <div class="we-can-flex">
                         <img src="assets/check.svg" alt="">
@@ -482,7 +510,8 @@
 
 
                     <div class="better-options">
-                        <h2>BUT WE CAN OFFER BETTER OPTIONS</h2>
+                        <h3>We can facilitate all of the above,</h3>
+                        <h2 class="red">BUT WE CAN OFFER YOU BETTER OPTIONS</h2>
                         <p>What fast house buyers <span class="red">do not</span> tell you is that this comes at a very
                             high cost.
                             SHR can offer you much better options and still stop your repossession or eviction. </p>
@@ -584,6 +613,11 @@
                 </div>
                 <div class="oval-two">
                     <h5>We Will<br>Handle All Your<br>Demand Letters</h5>
+                    <h2>NOW</h2>
+                </div>
+                <div class="oval-three">
+                    <h5>No Obligation<br>Consultation</h5>
+                    <h2>FREE</h2>
                 </div>
             </div>
         </div>
@@ -603,34 +637,34 @@
     <!-- ------------------- Accordion ------------------------- -->
     <h2 class="accordion-header">SHR SERVICES - FOR MORE INFORMATION <span class="red">CLICK</span> BELOW</h2>
     <ul class="accordion-wrapper">
-        <li class="accordion-item" id="homepage">
-            <input type="checkbox" class="checkbox" id="tabOneA" autocomplete="off" />
-            <label for="tabOneA" onclick="rotateImage1();">
+        <li class="accordion-item" id="what">
+            <input type="checkbox" class="checkbox" id="tabOne" data-group="group1" autocomplete="off" />
+            <label for="tabOne" onclick="rotateImage1();">
                 <div class="label-icon">
                     <div class="dot"></div>
                 </div>
                 <h6>What We Do</h6>
-                <img class="caret" id="caret1A" src="assets/caret.svg" alt="">
+                <img class="caret" id="caret1" src="assets/caret.svg" alt="">
             </label>
 
             <div class="panel">
                 <div class="panel-content">
                     <section>
                         <h5>Welcome to Stop House Repossessions.</h5>
-                        <h5>Repossessions and Evictions Stopped.</h5>
-                        <h5>Free Legal Court Representation.</h5>
+                        <h5 id="wwd-title-2">Repossessions and Evictions Stopped.</h5>
+                        <h5 id="wwd-title-3">Free Legal Court Representation.</h5>
                         <p>Here at SHR, we work differently to our competitors. What we offer homeowners is quite unique
                             and benefits clients in a more advantageous way. This is our area of expertise and as
                             specialists in this field, we are totally 100% focused and committed to stopping
                             repossessions and evictions for homeowners all around the UK.</p>
                         <p>Together with our experienced dedicated team, our aim is to provide a professional, effective
-                            and extremely efficient service for all our clients, with no fees required. At SHR we offer
+                            and extremely efficient service for all our clients, with no upfront fees required. At SHR we offer
                             options that differ from other companies, with solutions aimed to benefit you the homeowner
                             without having to lose your property to the bank. We work to extremely strict deadlines
                             because we fully appreciate and understand the importance and urgency when faced with a
-                            repossession order or court eviction notice. Our fast-operating model has been perfected to
+                            repossession order or court eviction notice. Our fast-operating rescue model has been perfected to
                             enable us together with our legal team to represent you at court regardless of what stage
-                            you are at. We will achieve the very best result and stop any action against you.</p>
+                            you are at. Knowing how time-sensitive your case is, we will achieve the very best result and stop any action against you.</p>
                         <p>As a company we pride ourselves on the service we offer and our high success rate in getting
                             results. Our experienced team made up of lawyers, solicitors, property experts, chartered
                             accountants, insolvency experts and funders will stop at nothing until all action against
@@ -638,37 +672,105 @@
                         <p>At SHR we will immediately relieve you from financial pressures should you make the right
                             choice and instruct us.</p>
 
-                        <input type="checkbox" class="checkbox" id="tabOneA" />
-                        <label class="close-tab" for="tabOneA">
-                            <a href="#homepage" onclick="tabOneA.click();rotateImage1();">Close Tab<span>X</span></a>
+                        <div class="accordion-number">
+                            <h4>Simply Call Free</h4>
+                            <a href="#">
+                                <h1>0800 0286 055</h1>
+                            </a>
+                            <h5>CALL ANYTIME - 7 DAYS A WEEK</h5>
+                            <a href="#">
+                                <h6>info@stop-houserepossessions.co.uk</h6>
+                            </a>
+                        </div>
+
+                        <input type="checkbox" class="checkbox" id="tabOne" />
+                        <label class="close-tab" for="tabOne">
+                            <a href="#what" onclick="tabOne.click();rotateImage1();">Close Tab<span>X</span></a>
                         </label>
                     </section>
 
                 </div>
             </div>
         </li>
+        <li class="accordion-item" id="whychoose">
+            <input type="checkbox" class="checkbox" name="tabTwo" id="tabTwo" data-group="group2" autocomplete="off" />
+            <label for="tabTwo" onclick="rotateImage2();">
+                <div class="label-icon">
+                    <div class="dot"></div>
+                </div>
+                <h6>Why Choose Us?</h6>
+                <img class="caret" id="caret2" src="assets/caret.svg" alt="">
+            </label>
+
+            <div class="panel">
+                <div class="panel-content">
+                    <section>
+                        <h5>Homeowners Choose SHR for Many Justifiable Reasons. </h5>
+                        <p>It’s not just because we do not charge for our exceptional service<span class="red bold">*</span>.</p>
+                        <p>It’s not just that we respond within minutes of receiving your enquiry.</p>
+                        <p>It’s not just because our legal team are ready to step in and stop your eviction or
+                            repossession
+                            at court, at very short notice. </p>
+                        <p>It’s not just that we offer you multiple options to take back control of your property and
+                            not
+                            let your lender repossess. </p>
+                        <p>It’s a combination of the above, plus several further factors that SHR can offer our clients.
+                            We
+                            firmly stand behind our core code of practice that we have adhered to at the very start.
+                        </p>
+                        <ul>
+                            <li>Exceptional level of customer service from start to finish. </li>
+                            <li>A dedicated, highly experienced and committed experienced team by your side. </li>
+                            <li>A trusted, specialist team of lawyers that have the know-how and your best interest at
+                                heart, who will not let you down.</li>
+                        </ul>
+                        <p>Why not utilise and lean on our vast experience in stopping repossessions and evictions. Take
+                            advantage of our years of knowledge and expertise in this field. We are here to help and
+                            resolve
+                            any issues you may encounter, fast.</p>
+                        <p>Once we have assessed your circumstances and requirements, we will work closely with you to
+                            achieve the best resolution, quickly. </p>
+                        <p class="asterisk"><span class="red bold">*</span>No fee charge applies to various options.  Further information on request.</p>
+                        <div class="accordion-number">
+                            <h4>Simply Call Free</h4>
+                            <a href="#">
+                                <h1>0800 0286 055</h1>
+                            </a>
+                            <h5>CALL ANYTIME - 7 DAYS A WEEK</h5>
+                            <a href="#">
+                                <h6>info@stop-houserepossessions.co.uk</h6>
+                            </a>
+                        </div>
+                        <input type="checkbox" class="checkbox" id="tabTwo" />
+                        <label class="close-tab" for="tabTwo">
+                            <a href=" #whychoose" onclick="tabTwo.click();rotateImage2();">Close
+                                Tab<span>X</span></a>
+                        </label>
+                    </section>
+                </div>
+            </div>
+        </li>
         <li class="accordion-item" id="evictions">
-            <input type="checkbox" class="checkbox" id="tabOne" data-group="group2" autocomplete="off" />
-            <label for="tabOne" onclick="rotateImage();">
+            <input type="checkbox" class="checkbox" id="tabThree" data-group="group3" autocomplete="off" />
+            <label for="tabThree" onclick="rotateImage3();">
                 <div class="label-icon">
                     <div class="dot"></div>
                 </div>
                 <h6>Repossessions & Evictions</h6>
-                <img class="caret" id="caret1" src="assets/caret.svg" alt="">
+                <img class="caret" id="caret3" src="assets/caret.svg" alt="">
             </label>
 
             <div class="panel">
                 <div class="panel-content">
                     <section>
                         <h5 class="toph5">Repossessions, Evictions & N244 Applications.</h5>
-                        <p>If a historic court application has failed and an eviction order is made, contact us and take
-                            immediate advice on filing a new application to suspend the possession order.</p>
+                        <p><span class="red bold">If a historic court application has failed and an eviction order is made, contact us and take
+                            immediate advice on filing a new application to suspend the possession order.</span></p>
 
                         <h5>Stopping repossession</h5>
                         <h6>YOU DON’T HAVE TO LOSE YOUR HOUSE</h6>
-                        <p>Our Legal Team will prevent the repossession from going ahead. We can save you property and
-                            allow
-                            enable you to retain equity.</p>
+                        <p>Our Legal Team will prevent the repossession from going ahead. We can save your property and
+                            enable you to retain your equity.</p>
                         <h6>TAKE HEED OF COURT LETTERS</h6>
                         <p>Take note of them and then act quickly by calling for help right away. Delay increases the
                             risk
@@ -689,7 +791,7 @@
                         <h5>FREE LEGAL DEFENCE</h5>
                         <p>We can stop your repossession at any stage; our legal team will make an emergency application
                             to HM Courts.</p>
-                        <p>We will provide an expert defence and attend Court on your behalf to ensure the repossession
+                        <p>We will provide an expert defence and attend Court on your behalf free of charge to ensure the repossession
                             is stopped. This in turn will enable us to find the most suitable options for you.</p>
                         <p>Many thousands of people have faced the threat of repossession, but by contacting us we will
                             stop the repossession, and save the equity in your home. Furthermore, you will benefit from
@@ -708,8 +810,8 @@
                             outcome.</p>
                         <h6>Submitting an N244 Application Form.</h6>
                         <p>An N244 Application incorrectly completed cannot delay or stop your eviction, but if used in
-                            the right manner will allow you an Emergency Court Hearing that with our help will stop your
-                            eviction.</p>
+                            the right manner will allow you an Emergency Court Hearing that with our help will <span class="red bold">stop your
+                            eviction</span>.</p>
                         <p>So it’s important to get things right. Our experience means that we can complete the N244
                             Application correctly to enable an Emergency Court Hearing that will stop your eviction
                             order and save your house</p>
@@ -784,9 +886,19 @@
                                 time. If you have already lost your hearing and you are looking to appeal, then by all
                                 means get in touch because we are still able to stop your eviction.</li>
                         </ul>
-                        <input type="checkbox" class="checkbox" id="tabOne" />
-                        <label class="close-tab" for="tabOne">
-                            <a href=" #evictions" onclick="tabOne.click();rotateImage();">Close Tab<span>X</span></a>
+
+                        <div class="accordion-number">
+                            <h4>Simply Call Free</h4>
+                            <a href="#">
+                                <h1>0800 0286 055</h1>
+                            </a>
+                            <h5>CALL ANYTIME - 7 DAYS A WEEK</h5>
+                            <a href="#"><h6>info@stop-houserepossessions.co.uk</h6></a>
+                        </div>
+
+                        <input type="checkbox" class="checkbox" id="tabThree" />
+                        <label class="close-tab" for="tabThree">
+                            <a href=" #evictions" onclick="tabThree.click();rotateImage3();">Close Tab<span>X</span></a>
                         </label>
                     </section>
                 </div>
@@ -794,13 +906,13 @@
         </li>
 
         <li class="accordion-item" id="free">
-            <input type="checkbox" class="checkbox" id="tabTwo" data-group="group4" />
-            <label for="tabTwo" onclick="rotateImage2();">
+            <input type="checkbox" class="checkbox" id="tabFour" data-group="group4" autocomplete="off"/>
+            <label for="tabFour" onclick="rotateImage4();">
                 <div class="label-icon">
                     <div class="dot"></div>
                 </div>
                 <h6>Free Legal Representation</h6>
-                <img class="caret" id="caret2" src="assets/caret.svg" alt="">
+                <img class="caret" id="caret4" src="assets/caret.svg" alt="">
             </label>
 
             <div class="panel">
@@ -815,28 +927,37 @@
                             property. At SHR we therefore take no chances and only instruct our trusted, experienced
                             London based lawyers and barristers who have vast knowledge in this area of high-risk
                             defence. You will receive representation from some of the most experienced and respected UK
-                            legal experts all at no cost to you. At SHR we do not gamble with solicitors who do not have
+                            legal experts all at <span class="red bold">no cost to you</span>. At SHR we do not gamble with solicitors who do not have
                             a track record of success in this field. It is your property at stake, so trust us, as we
                             are here to get results. </p>
                         <p>The N244 applications are prepared by our legal team, approved by the court and evictions are
                             cancelled. You do not have to lose your equity or property to the bank. </p>
-                        <p>Simply call <a href="#" class="red bold">0800 286 055</a></p>
-                        <input type="checkbox" class="checkbox" id="tabTwo" />
-                        <label class="close-tab" for="tabTwo">
-                            <a href=" #free" onclick="tabTwo.click();rotateImage2();">Close Tab<span>X</span></a>
+                        
+                        <div class="accordion-number">
+                            <h4>Simply Call Free</h4>
+                            <a href="#">
+                                <h1>0800 0286 055</h1>
+                            </a>
+                            <h5>CALL ANYTIME - 7 DAYS A WEEK</h5>
+                            <a href="#"><h6>info@stop-houserepossessions.co.uk</h6></a>
+                        </div>                            
+    
+                        <input type="checkbox" class="checkbox" id="tabFour" />
+                        <label class="close-tab" for="tabFour">
+                            <a href=" #free" onclick="tabFour.click();rotateImage4();">Close Tab<span>X</span></a>
                         </label>
                     </section>
                 </div>
             </div>
         </li>
         <li class="accordion-item" id="n244">
-            <input type="checkbox" class="checkbox" id="tabThree" data-group="group3" />
-            <label for="tabThree" onclick="rotateImage3();">
+            <input type="checkbox" class="checkbox" id="tabFive" data-group="group5" autocomplete="off"/>
+            <label for="tabFive" onclick="rotateImage5();">
                 <div class="label-icon">
                     <div class="dot"></div>
                 </div>
                 <h6>N244 Court Applications</h6>
-                <img class="caret" id="caret3" src="assets/caret.svg" alt="">
+                <img class="caret" id="caret5" src="assets/caret.svg" alt="">
             </label>
 
             <div class="panel">
@@ -966,28 +1087,38 @@
                                 time. If you have already lost your hearing and you are looking to appeal, then by all
                                 means get in touch because we are still able to stop your eviction.</li>
                         </ul>
-                        <input type="checkbox" class="checkbox" id="tabThree" />
-                        <label class="close-tab" for="tabThree">
-                            <a href=" #n244" onclick="tabThree.click();rotateImage3();">Close Tab<span>X</span></a>
+
+                        <div class="accordion-number">
+                            <h4>Simply Call Free</h4>
+                            <a href="#">
+                                <h1>0800 0286 055</h1>
+                            </a>
+                            <h5>CALL ANYTIME - 7 DAYS A WEEK</h5>
+                            <a href="#"><h6>info@stop-houserepossessions.co.uk</h6></a>
+                        </div>
+
+                        <input type="checkbox" class="checkbox" id="tabFive" />
+                        <label class="close-tab" for="tabFive">
+                            <a href=" #n244" onclick="tabFive.click();rotateImage5();">Close Tab<span>X</span></a>
                         </label>
                     </section>
                 </div>
             </div>
         </li>
         <li class="accordion-item" id="highcounty">
-            <input type="checkbox" class="checkbox" id="tabFour" data-group="group5" />
-            <label for="tabFour" onclick="rotateImage4();">
+            <input type="checkbox" class="checkbox" id="tabSix" data-group="group6" autocomplete="off"/>
+            <label for="tabSix" onclick="rotateImage6();">
                 <div class="label-icon">
                     <div class="dot"></div>
                 </div>
                 <h6>High Court & County Court</h6>
-                <img class="caret" id="caret4" src="assets/caret.svg" alt="">
+                <img class="caret" id="caret6" src="assets/caret.svg" alt="">
             </label>
 
             <div class="panel">
                 <div class="panel-content">
                     <section>
-                        <h5>Property repossession - The Role of The Court & High County Court</h5>
+                        <h5>Property repossession - The Role of High Court & County Court</h5>
                         <p>If you have fallen behind with mortgage repayments and your lender has taken a case against
                             you,
                             you will be summoned to court. The court will consider the cases put forward by you and the
@@ -1089,11 +1220,20 @@
                             the county court, by submitting to the high court and having high court sheriffs to visit
                             your
                             property and execute the warrant for possession.</p>
-                        <p>This is an area where we excel and are able to help if you act quickly. Call <a href="#"
-                                class="red bold">0800 286 055</a></p>
-                        <input type="checkbox" class="checkbox" id="tabFour" />
-                        <label class="close-tab" for="tabFour">
-                            <a href=" #highcounty" onclick="tabFour.click();rotateImage4();">Close
+                        <p>This is an area where we excel and are able to help if you act quickly.</p>
+
+                        <div class="accordion-number">
+                            <h4>Simply Call Free</h4>
+                            <a href="#">
+                                <h1>0800 0286 055</h1>
+                            </a>
+                            <h5>CALL ANYTIME - 7 DAYS A WEEK</h5>
+                            <a href="#"><h6>info@stop-houserepossessions.co.uk</h6></a>
+                        </div>
+
+                        <input type="checkbox" class="checkbox" id="tabSix" />
+                        <label class="close-tab" for="tabSix">
+                            <a href=" #highcounty" onclick="tabSix.click();rotateImage6();">Close
                                 Tab<span>X</span></a>
                         </label>
                     </section>
@@ -1101,13 +1241,13 @@
             </div>
         </li>
         <li class="accordion-item" id="tbr">
-            <input type="checkbox" class="checkbox" id="tabFive" data-group="group6" />
-            <label for="tabFive" onclick="rotateImage5();">
+            <input type="checkbox" class="checkbox" id="tabSeven" data-group="group7" autocomplete="off"/>
+            <label for="tabSeven" onclick="rotateImage7();">
                 <div class="label-icon">
                     <div class="dot"></div>
                 </div>
                 <h6>Trustees - Bankruptcy - Receivers</h6>
-                <img class="caret" id="caret5" src="assets/caret.svg" alt="">
+                <img class="caret" id="caret7" src="assets/caret.svg" alt="">
             </label>
 
             <div class="panel">
@@ -1126,23 +1266,32 @@
                             vigorously negotiate the best deal on your behalf, in order to prevent lenders from
                             instructing receivers in the first place. Situations such as these always escalate when
                             homeowners delay and don’t act quickly. </p>
-                        <p>We are simply one call away <a href="#" class="red bold">0800 286 055</a></p>
-                        <input type="checkbox" class="checkbox" id="tabFive" />
-                        <label class="close-tab" for="tabFive">
-                            <a href=" #tbr" onclick="tabFive.click();rotateImage5();">Close Tab<span>X</span></a>
+                        
+                        <div class="accordion-number">
+                            <h4>Simply Call Free</h4>
+                            <a href="#">
+                                <h1>0800 0286 055</h1>
+                            </a>
+                            <h5>CALL ANYTIME - 7 DAYS A WEEK</h5>
+                            <a href="#"><h6>info@stop-houserepossessions.co.uk</h6></a>
+                        </div>    
+
+                        <input type="checkbox" class="checkbox" id="tabSeven" />
+                        <label class="close-tab" for="tabSeven">
+                            <a href=" #tbr" onclick="tabSeven.click();rotateImage7();">Close Tab<span>X</span></a>
                         </label>
                     </section>
                 </div>
             </div>
         </li>
         <li class="accordion-item" id="rent-free">
-            <input type="checkbox" class="checkbox" id="tabSix" />
-            <label for="tabSix" onclick="rotateImage6();">
+            <input type="checkbox" class="checkbox" id="tabEight" autocomplete="off"/>
+            <label for="tabEight" onclick="rotateImage8();">
                 <div class="label-icon">
                     <div class="dot"></div>
                 </div>
                 <h6>Rent Free & Mortgage Free</h6>
-                <img class="caret" id="caret6" src="assets/caret.svg" alt="">
+                <img class="caret" id="caret8" src="assets/caret.svg" alt="">
             </label>
 
             <div class="panel">
@@ -1156,73 +1305,35 @@
                             for a free home visit. Whichever option you select, remember your repossession or eviction
                             need to be stopped first.</p>
                         <p>Please don’t delay, if you receive a repossession order or court eviction notice in the post,
-                            call us immediately for a free confidential, no obligation chat <a href="#"
-                                class="red bold">0800 286 055</a></p>
-                        <input type="checkbox" class="checkbox" id="tabSix" />
-                        <label class="close-tab" for="tabSix">
-                            <a href=" #rent-free" onclick="tabSix.click();rotateImage6();">Close
-                                Tab<span>X</span></a>
-                        </label>
-                    </section>
-                </div>
-            </div>
-        </li>
-        <li class="accordion-item" id="whychoose">
-            <input type="checkbox" class="checkbox" name="tabSeven" id="tabSeven" data-group="group1" />
-            <label for="tabSeven" onclick="rotateImage7();">
-                <div class="label-icon">
-                    <div class="dot"></div>
-                </div>
-                <h6>Why Choose Us?</h6>
-                <img class="caret" id="caret7" src="assets/caret.svg" alt="">
-            </label>
+                            call us immediately for a free confidential, no obligation chat.</p>
 
-            <div class="panel">
-                <div class="panel-content">
-                    <section>
-                        <h5>Homeowners Choose SHR for Many Justifiable Reasons. </h5>
-                        <p>It’s not just because we do not charge for our exceptional service. </p>
-                        <p>It’s not just that we respond within minutes of receiving your enquiry.</p>
-                        <p>It’s not just because our legal team are ready to step in and stop your eviction or
-                            repossession
-                            at court, at very short notice. </p>
-                        <p>It’s not just that we offer you multiple options to take back control of your property and
-                            not
-                            let your lender repossess. </p>
-                        <p>It’s a combination of the above, plus several further factors that SHR can offer our clients.
-                            We
-                            firmly stand behind our core code of practice that we have adhered to at the very start.
-                        </p>
-                        <ul>
-                            <li>Exceptional level of customer service from start to finish. </li>
-                            <li>A dedicated, highly experienced and committed team by your side. </li>
-                            <li>A trusted, specialist team of lawyers that have the know-how and your best interest at
-                                heart, who will not let you down.</li>
-                        </ul>
-                        <p>Why not utilise and lean on our vast experience in stopping repossessions and evictions. Take
-                            advantage of our years of knowledge and expertise in this field. We are here to help and
-                            resolve
-                            any issues you may encounter, fast.</p>
-                        <p>Once we have assessed your circumstances and requirements, we will work closely with you to
-                            achieve the best resolution, quickly. </p>
-                        <p>Call <a href="#" class="red bold">0800 286 055</a> </p>
-                        <input type="checkbox" class="checkbox" id="tabSeven" />
-                        <label class="close-tab" for="tabSeven">
-                            <a href=" #whychoose" onclick="tabSeven.click();rotateImage7();">Close
+                        <div class="accordion-number">
+                            <h4>Simply Call Free</h4>
+                            <a href="#">
+                                <h1>0800 0286 055</h1>
+                            </a>
+                            <h5>CALL ANYTIME - 7 DAYS A WEEK</h5>
+                            <a href="#"><h6>info@stop-houserepossessions.co.uk</h6></a>
+                        </div>
+
+                        <input type="checkbox" class="checkbox" id="tabEight" />
+                        <label class="close-tab" for="tabEight">
+                            <a href=" #rent-free" onclick="tabEight.click();rotateImage8();">Close
                                 Tab<span>X</span></a>
                         </label>
                     </section>
                 </div>
             </div>
         </li>
+
         <li class="accordion-item" id="team">
-            <input type="checkbox" class="checkbox" id="tabEight" />
-            <label for="tabEight" onclick="rotateImage8();">
+            <input type="checkbox" class="checkbox" id="tabNine" autocomplete="off"/>
+            <label for="tabNine" onclick="rotateImage9();">
                 <div class="label-icon">
                     <div class="dot"></div>
                 </div>
                 <h6>Our Team</h6>
-                <img class="caret" id="caret8" src="assets/caret.svg" alt="">
+                <img class="caret" id="caret9" src="assets/caret.svg" alt="">
             </label>
 
             <div class="panel">
@@ -1251,10 +1362,19 @@
                             repossessions. We are fully prepared and can handle all obstacles and complex cases
                             successfully, including legal final demands, repossession orders and court eviction notices
                             that you may be faced with at short notice. </p>
-                        <p>We are simply one call away <a href="#" class="red bold">0800 286 055</a></p>
-                        <input type="checkbox" class="checkbox" id="tabEight" />
-                        <label class="close-tab" for="tabEight">
-                            <a href=" #team" onclick="tabEight.click();rotateImage8();">Close
+                        
+                        <div class="accordion-number">
+                            <h4>Simply Call Free</h4>
+                            <a href="#">
+                                <h1>0800 0286 055</h1>
+                            </a>
+                            <h5>CALL ANYTIME - 7 DAYS A WEEK</h5>
+                            <a href="#"><h6>info@stop-houserepossessions.co.uk</h6></a>
+                        </div>
+
+                        <input type="checkbox" class="checkbox" id="tabNine" />
+                        <label class="close-tab" for="tabNine">
+                            <a href=" #team" onclick="tabNine.click();rotateImage9();">Close
                                 Tab<span>X</span></a>
                         </label>
                     </section>
@@ -1262,13 +1382,13 @@
             </div>
         </li>
         <li class="accordion-item" id="simple">
-            <input type="checkbox" class="checkbox" id="tabNine" />
-            <label for="tabNine" onclick="rotateImage9();">
+            <input type="checkbox" class="checkbox" id="tabTen" autocomplete="off"/>
+            <label for="tabTen" onclick="rotateImage10();">
                 <div class="label-icon">
                     <div class="dot"></div>
                 </div>
                 <h6>Simple Process</h6>
-                <img class="caret" id="caret9" src="assets/caret.svg" alt="">
+                <img class="caret" id="caret10" src="assets/caret.svg" alt="">
             </label>
 
             <div class="panel">
@@ -1283,9 +1403,19 @@
                             our emergency legal defence team. Once this has been achieved and your repossession or
                             eviction has been stopped, we will advise you on several options and put in place a solution
                             that best suits you and relieve you of your fears and financial pressures. </p>
+
+                            <div class="accordion-number">
+                                <h4>Simply Call Free</h4>
+                                <a href="#">
+                                    <h1>0800 0286 055</h1>
+                                </a>
+                                <h5>CALL ANYTIME - 7 DAYS A WEEK</h5>
+                                <a href="#"><h6>info@stop-houserepossessions.co.uk</h6></a>
+                            </div>
+
                         <input type="checkbox" class="checkbox" id="tabNine" />
-                        <label class="close-tab" for="tabNine">
-                            <a href=" #simple" onclick="tabNine.click();rotateImage9();">Close
+                        <label class="close-tab" for="tabTen">
+                            <a href=" #simple" onclick="tabTen.click();rotateImage10();">Close
                                 Tab<span>X</span></a>
                         </label>
                     </section>
@@ -1294,13 +1424,13 @@
             </div>
         </li>
         <li class="accordion-item" id="equity">
-            <input type="checkbox" class="checkbox" id="tabTen" />
-            <label for="tabTen" onclick="rotateImage10();">
+            <input type="checkbox" class="checkbox" id="tabEleven" autocomplete="off"/>
+            <label for="tabEleven" onclick="rotateImage11();">
                 <div class="label-icon">
                     <div class="dot"></div>
                 </div>
                 <h6>Maximise Your Equity</h6>
-                <img class="caret" id="caret10" src="assets/caret.svg" alt="">
+                <img class="caret" id="caret11" src="assets/caret.svg" alt="">
             </label>
 
             <div class="panel">
@@ -1319,9 +1449,19 @@
                         <p>All you need to do is call us free on: <a href="#" class="red bold">0800 286 055</a> for a
                             free confidential chat, help and correct
                             advice.</p>
-                        <input type="checkbox" class="checkbox" id="tabTen" />
-                        <label class="close-tab" for="tabTen">
-                            <a href=" #equity" onclick="tabTen.click();rotateImage10();">Close
+
+                            <div class="accordion-number">
+                                <h4>Simply Call Free</h4>
+                                <a href="#">
+                                    <h1>0800 0286 055</h1>
+                                </a>
+                                <h5>CALL ANYTIME - 7 DAYS A WEEK</h5>
+                                <a href="#"><h6>info@stop-houserepossessions.co.uk</h6></a>
+                            </div>
+
+                        <input type="checkbox" class="checkbox" id="tabEleven" />
+                        <label class="close-tab" for="tabEleven">
+                            <a href=" #equity" onclick="tabEleven.click();rotateImage11();">Close
                                 Tab<span>X</span></a>
                         </label>
                     </section>
@@ -1329,13 +1469,13 @@
             </div>
         </li>
         <li class="accordion-item" id="lose">
-            <input type="checkbox" class="checkbox" id="tabEleven" />
-            <label for="tabEleven" onclick="rotateImage11();">
+            <input type="checkbox" class="checkbox" id="tabTwelve" autocomplete="off"/>
+            <label for="tabTwelve" onclick="rotateImage12();">
                 <div class="label-icon">
                     <div class="dot"></div>
                 </div>
                 <h6>Don't Lose Your Property</h6>
-                <img class="caret" id="caret11" src="assets/caret.svg" alt="">
+                <img class="caret" id="caret12" src="assets/caret.svg" alt="">
             </label>
 
             <div class="panel">
@@ -1359,9 +1499,19 @@
                             to go through all of your options and select a package that is best suited for you and get
                             you
                             back on the road to recovery without losing your property. </p>
-                        <input type="checkbox" class="checkbox" id="tabEleven" />
-                        <label class="close-tab" for="tabEleven">
-                            <a href=" #lose" onclick="tabEleven.click();rotateImage11();">Close
+
+                            <div class="accordion-number">
+                                <h4>Simply Call Free</h4>
+                                <a href="#">
+                                    <h1>0800 0286 055</h1>
+                                </a>
+                                <h5>CALL ANYTIME - 7 DAYS A WEEK</h5>
+                                <a href="#"><h6>info@stop-houserepossessions.co.uk</h6></a>
+                            </div>
+
+                        <input type="checkbox" class="checkbox" id="tabTwelve" />
+                        <label class="close-tab" for="tabTwelve">
+                            <a href=" #lose" onclick="tabTwelve.click();rotateImage12();">Close
                                 Tab<span>X</span></a>
                         </label>
                     </section>
@@ -1369,22 +1519,32 @@
             </div>
         </li>
         <li class="accordion-item" id="notice">
-            <input type="checkbox" class="checkbox" id="tabTwelve" />
-            <label for="tabTwelve" onclick="rotateImage12();">
+            <input type="checkbox" class="checkbox" id="tabThirteen" autocomplete="off"/>
+            <label for="tabThirteen" onclick="rotateImage13();">
                 <div class="label-icon">
                     <div class="dot"></div>
                 </div>
                 <h6>Eviction Notice Form</h6>
-                <img class="caret" id="caret12" src="assets/caret.svg" alt="">
+                <img class="caret" id="caret13" src="assets/caret.svg" alt="">
             </label>
 
             <div class="panel">
                 <div class="panel-content">
                     <section>
                         <img src="assets/n54.jpg" alt="" id="n54">
-                        <input type="checkbox" class="checkbox" id="tabTwelve" />
-                        <label class="close-tab" for="tabTwelve">
-                            <a href=" #notice" onclick="tabTwelve.click();rotateImage12();">Close
+
+                        <div class="accordion-number">
+                            <h4>Simply Call Free</h4>
+                            <a href="#">
+                                <h1>0800 0286 055</h1>
+                            </a>
+                            <h5>CALL ANYTIME - 7 DAYS A WEEK</h5>
+                            <a href="#"><h6>info@stop-houserepossessions.co.uk</h6></a>
+                        </div>
+
+                        <input type="checkbox" class="checkbox" id="tabThirteen" />
+                        <label class="close-tab" for="tabThirteen">
+                            <a href=" #notice" onclick="tabThirteen.click();rotateImage13();">Close
                                 Tab<span>X</span></a>
                         </label>
                     </section>
